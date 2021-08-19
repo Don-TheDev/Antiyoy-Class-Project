@@ -1,0 +1,10 @@
+yio/tro/antiyoy/BuildConfig.java
+ yio.tro.antiyoy.BuildConfig
+yio/tro/antiyoy/R.java
+ yio.tro.antiyoy.R
+ yio.tro.antiyoy.R$color
+ yio.tro.antiyoy.R$drawable
+ yio.tro.antiyoy.R$string
+ yio.tro.antiyoy.R$style
+yio/tro/antiyoy/AndroidLauncher.java
+ yio.tro.antiyoy.AndroidLauncher

@@ -1,0 +1,2 @@
+yio/tro/antiyoy/desktop/DesktopLauncher.java
+ yio.tro.antiyoy.desktop.DesktopLauncher
