@@ -1,4 +1,4 @@
-#Wed Aug 18 19:13:10 MDT 2021
-base.0=C\:\\LibGDX\\Antiyoy\\android\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Wed Aug 18 19:36:16 MDT 2021
+base.0=C\:\\Projects\\Java\\Antiyoy\\android\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
