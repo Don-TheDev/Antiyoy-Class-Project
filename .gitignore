@@ -24,3 +24,9 @@ hs_err_pid*
 local.properties
 *.bin
 *.lock
+*.bin
+*.lock
+*.json
+*.flat
+*.txt
+*.apk

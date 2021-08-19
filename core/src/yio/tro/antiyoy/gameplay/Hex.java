@@ -7,7 +7,7 @@ import yio.tro.antiyoy.gameplay.rules.GameRules;
 import yio.tro.antiyoy.stuff.object_pool.ReusableYio;
 
 
-public class Hex implements ReusableYio, EncodeableYio{
+public class Hex implements ReusableYio, EncodeableYio {
 
     public boolean active, selected, changingFraction, flag, inMoveZone, genFlag, ignoreTouch;
     public int index1, index2, moveZoneNumber, genPotential, visualDiversityIndex;
