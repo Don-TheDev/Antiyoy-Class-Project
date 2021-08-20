@@ -24,14 +24,9 @@ hs_err_pid*
 local.properties
 *.bin
 *.lock
-*.bin
-*.lock
 *.json
 *.flat
 *.txt
 *.apk
-*.bin
-*.bin
-*.lock
-*.txt
-*.apk
+
+/.gradle/
