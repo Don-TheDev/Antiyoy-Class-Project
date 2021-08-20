@@ -7,8 +7,16 @@ import yio.tro.antiyoy.YioGdxGame;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-		config.height = 1280;
-		config.width = 720;
+
+		// only edit scale
+		// formulas preserves 16:9 aspect ratio
+		final int scale = 60;
+		config.height = 16 * scale;
+		config.width = 9 * scale;
+
+		// game would not be proportional if resized
+		config.resizable = false;
+
 		new LwjglApplication(new YioGdxGame(), config);
 	}
 }
