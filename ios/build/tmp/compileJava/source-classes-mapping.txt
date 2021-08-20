@@ -1,2 +1,0 @@
-yio/tro/antiyoy/IOSLauncher.java
- yio.tro.antiyoy.IOSLauncher
