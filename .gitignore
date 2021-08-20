@@ -30,3 +30,8 @@ local.properties
 *.flat
 *.txt
 *.apk
+*.bin
+*.bin
+*.lock
+*.txt
+*.apk

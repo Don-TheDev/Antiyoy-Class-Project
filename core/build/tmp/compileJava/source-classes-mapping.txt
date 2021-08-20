@@ -91,8 +91,10 @@ yio/tro/antiyoy/gameplay/user_levels/pack/UlevFetih1453.java
  yio.tro.antiyoy.gameplay.user_levels.pack.UlevFetih1453
 yio/tro/antiyoy/gameplay/user_levels/pack/UlevCarrotAndBunny.java
  yio.tro.antiyoy.gameplay.user_levels.pack.UlevCarrotAndBunny
-yio/tro/antiyoy/menu/behaviors/menu_creation/RbSaveMoreSkirmishOptions.java
- yio.tro.antiyoy.menu.behaviors.menu_creation.RbSaveMoreSkirmishOptions
+yio/tro/antiyoy/menu/diplomatic_dialogs/AbstractDiplomaticDialog.java
+ yio.tro.antiyoy.menu.diplomatic_dialogs.AbstractDiplomaticDialog
+ yio.tro.antiyoy.menu.diplomatic_dialogs.AbstractDiplomaticDialog$1
+ yio.tro.antiyoy.menu.diplomatic_dialogs.AbstractDiplomaticDialog$2
 yio/tro/antiyoy/menu/scenes/SceneUlFilters.java
  yio.tro.antiyoy.menu.scenes.SceneUlFilters
  yio.tro.antiyoy.menu.scenes.SceneUlFilters$1
@@ -184,8 +186,8 @@ yio/tro/antiyoy/menu/scenes/SceneTestScreen.java
  yio.tro.antiyoy.menu.scenes.SceneTestScreen
 yio/tro/antiyoy/menu/MenuControllerYio.java
  yio.tro.antiyoy.menu.MenuControllerYio
-yio/tro/antiyoy/menu/behaviors/RbStartSkirmishGame.java
- yio.tro.antiyoy.menu.behaviors.RbStartSkirmishGame
+yio/tro/antiyoy/gameplay/replays/actions/RaUnitSpawned.java
+ yio.tro.antiyoy.gameplay.replays.actions.RaUnitSpawned
 yio/tro/antiyoy/gameplay/user_levels/pack/UlevBigNeighbor.java
  yio.tro.antiyoy.gameplay.user_levels.pack.UlevBigNeighbor
 yio/tro/antiyoy/stuff/PointYio.java
@@ -745,9 +747,11 @@ yio/tro/antiyoy/menu/scenes/SceneCityNames.java
  yio.tro.antiyoy.menu.scenes.SceneCityNames$3
  yio.tro.antiyoy.menu.scenes.SceneCityNames$4
  yio.tro.antiyoy.menu.scenes.SceneCityNames$5
-yio/tro/antiyoy/menu/scenes/SceneMoreSkirmishOptions.java
- yio.tro.antiyoy.menu.scenes.SceneMoreSkirmishOptions
- yio.tro.antiyoy.menu.scenes.SceneMoreSkirmishOptions$1
+yio/tro/antiyoy/menu/scenes/editor/SceneEditorPauseMenu.java
+ yio.tro.antiyoy.menu.scenes.editor.SceneEditorPauseMenu
+ yio.tro.antiyoy.menu.scenes.editor.SceneEditorPauseMenu$1
+ yio.tro.antiyoy.menu.scenes.editor.SceneEditorPauseMenu$2
+ yio.tro.antiyoy.menu.scenes.editor.SceneEditorPauseMenu$3
 yio/tro/antiyoy/gameplay/user_levels/pack/UlevAmplob.java
  yio.tro.antiyoy.gameplay.user_levels.pack.UlevAmplob
 yio/tro/antiyoy/gameplay/user_levels/pack/UlevHunterVsGatherer.java
@@ -774,8 +778,8 @@ yio/tro/antiyoy/gameplay/user_levels/pack/UlevBackyardSale.java
  yio.tro.antiyoy.gameplay.user_levels.pack.UlevBackyardSale
 yio/tro/antiyoy/menu/slider/SliderListener.java
  yio.tro.antiyoy.menu.slider.SliderListener
-yio/tro/antiyoy/menu/scenes/Scenes.java
- yio.tro.antiyoy.menu.scenes.Scenes
+yio/tro/antiyoy/menu/scenes/editor/SceneEditorConfirmRandomize.java
+ yio.tro.antiyoy.menu.scenes.editor.SceneEditorConfirmRandomize
 yio/tro/antiyoy/gameplay/replays/actions/RaHexFractionChanged.java
  yio.tro.antiyoy.gameplay.replays.actions.RaHexFractionChanged
 yio/tro/antiyoy/gameplay/user_levels/pack/UlevSpikes.java
@@ -825,8 +829,8 @@ yio/tro/antiyoy/gameplay/campaign/LevelPackNine.java
  yio.tro.antiyoy.gameplay.campaign.LevelPackNine
 yio/tro/antiyoy/stuff/object_pool/ReusableYio.java
  yio.tro.antiyoy.stuff.object_pool.ReusableYio
-yio/tro/antiyoy/menu/behaviors/menu_creation/RbMoreSkirmishOptions.java
- yio.tro.antiyoy.menu.behaviors.menu_creation.RbMoreSkirmishOptions
+yio/tro/antiyoy/menu/render/RenderReplayListItem.java
+ yio.tro.antiyoy.menu.render.RenderReplayListItem
 yio/tro/antiyoy/menu/keyboard/KbButton.java
  yio.tro.antiyoy.menu.keyboard.KbButton
 yio/tro/antiyoy/gameplay/user_levels/pack/Ulev2030SouthAmerica.java
@@ -1693,18 +1697,14 @@ yio/tro/antiyoy/menu/ButtonRenderer.java
  yio.tro.antiyoy.menu.ButtonRenderer
 yio/tro/antiyoy/menu/scenes/SceneNotification.java
  yio.tro.antiyoy.menu.scenes.SceneNotification
-yio/tro/antiyoy/menu/render/RenderReplayListItem.java
- yio.tro.antiyoy.menu.render.RenderReplayListItem
-yio/tro/antiyoy/menu/diplomatic_dialogs/AbstractDiplomaticDialog.java
- yio.tro.antiyoy.menu.diplomatic_dialogs.AbstractDiplomaticDialog
- yio.tro.antiyoy.menu.diplomatic_dialogs.AbstractDiplomaticDialog$1
- yio.tro.antiyoy.menu.diplomatic_dialogs.AbstractDiplomaticDialog$2
-yio/tro/antiyoy/menu/scenes/editor/SceneEditorConfirmRandomize.java
- yio.tro.antiyoy.menu.scenes.editor.SceneEditorConfirmRandomize
-yio/tro/antiyoy/gameplay/replays/actions/RaUnitSpawned.java
- yio.tro.antiyoy.gameplay.replays.actions.RaUnitSpawned
-yio/tro/antiyoy/menu/scenes/editor/SceneEditorPauseMenu.java
- yio.tro.antiyoy.menu.scenes.editor.SceneEditorPauseMenu
- yio.tro.antiyoy.menu.scenes.editor.SceneEditorPauseMenu$1
- yio.tro.antiyoy.menu.scenes.editor.SceneEditorPauseMenu$2
- yio.tro.antiyoy.menu.scenes.editor.SceneEditorPauseMenu$3
+yio/tro/antiyoy/menu/scenes/SceneMoreSkirmishOptions.java
+ yio.tro.antiyoy.menu.scenes.SceneMoreSkirmishOptions
+ yio.tro.antiyoy.menu.scenes.SceneMoreSkirmishOptions$1
+yio/tro/antiyoy/menu/behaviors/RbStartSkirmishGame.java
+ yio.tro.antiyoy.menu.behaviors.RbStartSkirmishGame
+yio/tro/antiyoy/menu/scenes/Scenes.java
+ yio.tro.antiyoy.menu.scenes.Scenes
+yio/tro/antiyoy/menu/behaviors/menu_creation/RbSaveMoreSkirmishOptions.java
+ yio.tro.antiyoy.menu.behaviors.menu_creation.RbSaveMoreSkirmishOptions
+yio/tro/antiyoy/menu/behaviors/menu_creation/RbMoreSkirmishOptions.java
+ yio.tro.antiyoy.menu.behaviors.menu_creation.RbMoreSkirmishOptions
