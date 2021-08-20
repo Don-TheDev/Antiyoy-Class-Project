@@ -31,3 +31,17 @@ local.properties
 
 */build/
 /.gradle/
+android/build/intermediates/incremental/debug-mergeJavaRes/merge-state
+android/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/qxJ4q5454BvS6na+jXhJ4ZKxCT4=
+android/build/intermediates/incremental/debug-mergeNativeLibs/merge-state
+android/build/intermediates/incremental/debug-mergeNativeLibs/zip-cache/qxJ4q5454BvS6na+jXhJ4ZKxCT4=
+android/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties
+*.txt
+android/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/1vUa6fcUux1gBlTz3_cPdHZAUCc=
+android/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/1xrcFJKtYQvceXdzkYav+zQgy8U=
+android/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/AAMekbDBuDqWkFVJW0UBOuDA+K8=
+*.apk
+*.dex
+*.txt
+core/src/yio/tro/antiyoy/menu/scenes/SceneMoreSkirmishOptions.java
+local.properties

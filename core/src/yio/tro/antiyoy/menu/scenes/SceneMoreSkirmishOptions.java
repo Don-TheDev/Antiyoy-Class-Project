@@ -132,6 +132,7 @@ public class SceneMoreSkirmishOptions extends AbstractScene{
         chkFogOfWar.appear();
         chkDiplomacy.appear();
         chkDisasters.appear();
+        //COmmented out code
     }
 
 
