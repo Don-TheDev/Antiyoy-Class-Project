@@ -1,4 +1,0 @@
-yio/tro/antiyoy/test/BuildConfig.java
- yio.tro.antiyoy.test.BuildConfig
-yio/tro/antiyoy/test/R.java
- yio.tro.antiyoy.test.R
