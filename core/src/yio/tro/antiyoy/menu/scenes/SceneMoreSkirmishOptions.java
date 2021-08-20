@@ -31,6 +31,8 @@ public class SceneMoreSkirmishOptions extends AbstractScene{
         colorHolderElement = null;
         chkSlayRules = null;
         provincesSlider = null;
+
+        //arbitrary comment
     }
 
 
@@ -148,13 +150,13 @@ public class SceneMoreSkirmishOptions extends AbstractScene{
         chkFogOfWar = CheckButtonYio.getFreshCheckButton(menuControllerYio);
         chkFogOfWar.setParent(label);
         chkFogOfWar.alignUnderPreviousElement();
-        chkFogOfWar.setTitle(getString("fog_of_war"));
+        chkFogOfWar.setTitle(getString("Fog of War"));
         chkFogOfWar.centerHorizontal(0.05);
 
         chkDiplomacy = CheckButtonYio.getFreshCheckButton(menuControllerYio);
         chkDiplomacy.setParent(label);
         chkDiplomacy.alignUnderPreviousElement();
-        chkDiplomacy.setTitle(getString("diplomacy"));
+        chkDiplomacy.setTitle(getString("Diplomacy"));
         chkDiplomacy.centerHorizontal(0.05);
 
         chkDisasters = CheckButtonYio.getFreshCheckButton(menuControllerYio);
