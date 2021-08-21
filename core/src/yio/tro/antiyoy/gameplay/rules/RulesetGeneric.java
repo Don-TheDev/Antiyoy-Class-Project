@@ -25,6 +25,14 @@ public class RulesetGeneric extends Ruleset{
 
 
     @Override
+    public boolean canSpawnDisasterOnHex(Hex hex)
+    {
+        //TODO finish implementing disaster rule
+        return hex.isFree() && gameController.getRandom().nextDouble() < 0.8;
+    }
+
+
+    @Override
     public void onUnitAdd(Hex hex) {
         if (!hex.containsTree()) {
             return;

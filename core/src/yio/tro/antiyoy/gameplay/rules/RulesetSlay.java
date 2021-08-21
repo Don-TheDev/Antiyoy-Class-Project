@@ -20,6 +20,13 @@ public class RulesetSlay extends Ruleset{
         return hex.isFree() && hex.isNearWater() && hex.hasPalmReadyToExpandNearby();
     }
 
+    @Override
+    public boolean canSpawnDisasterOnHex(Hex hex)
+    {
+        //TODO finish implementing disaster rule
+        return hex.isFree() && gameController.getRandom().nextDouble() < 0.8;
+    }
+
 
     @Override
     public void onUnitAdd(Hex hex) {

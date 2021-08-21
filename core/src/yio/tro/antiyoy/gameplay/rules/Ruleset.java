@@ -18,6 +18,9 @@ public abstract class Ruleset {
     public abstract boolean canSpawnPalmOnHex(Hex hex);
 
 
+    public abstract boolean canSpawnDisasterOnHex(Hex hex);
+
+
     public abstract void onUnitAdd(Hex hex);
 
 

@@ -9,5 +9,6 @@ public class Obj {
     public static final int GRAVE = 5;
     public static final int FARM = 6;
     public static final int STRONG_TOWER = 7;
+    public static final int DISASTER = 8; //TODO not sure what this does yet
 
 }

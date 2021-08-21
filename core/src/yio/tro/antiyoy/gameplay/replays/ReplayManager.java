@@ -79,6 +79,13 @@ public class ReplayManager {
     }
 
 
+    public void onDisasterSpawned(Hex hex) {
+        //TODO finish implementing disaster spawned listener
+        if (!canAddAction()) return;
+        replay.addAction(new RaDisasterSpawned(hex));
+    }
+
+
     public void onUnitBuilt(Province src, Hex dst, int strength) {
         if (!canAddAction()) return;
         replay.addAction(new RaUnitBuilt(src.getCapital(), dst, strength));

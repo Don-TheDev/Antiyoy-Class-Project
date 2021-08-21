@@ -480,6 +480,29 @@ public class FieldManager implements EncodeableYio{
     }
 
 
+    public void expandDisasters() {
+        //TODO finish implementing expand disasters
+        if (GameRules.replayMode) return;
+
+        ArrayList<Hex> newDisastersList = getNewDisastersList();
+        ArrayList<Hex> newPinesList = getNewPinesList();
+
+        for (int i = newDisastersList.size() - 1; i >= 0; i--) {
+            spawnDisaster(newDisastersList.get(i));
+        }
+
+        for (int i = newPinesList.size() - 1; i >= 0; i--) {
+            spawnPine(newPinesList.get(i));
+        }
+
+        for (Hex activeHex : activeHexes) {
+            if (activeHex.containsDisaster() && activeHex.blockToTreeFromExpanding) {
+                activeHex.blockToTreeFromExpanding = false;
+            }
+        }
+    }
+
+
     private ArrayList<Hex> getNewPinesList() {
         ArrayList<Hex> newPinesList = new ArrayList<Hex>();
 
@@ -505,6 +528,19 @@ public class FieldManager implements EncodeableYio{
         return newPalmsList;
     }
 
+    private ArrayList<Hex> getNewDisastersList() {
+        //TODO finish implementing disasters list
+        ArrayList<Hex> newDisastersList = new ArrayList<Hex>();
+
+        for (Hex hex : activeHexes) {
+            if (gameController.ruleset.canSpawnDisasterOnHex(hex)) {
+                newDisastersList.add(hex);
+            }
+        }
+
+        return newDisastersList;
+    }
+
 
     private void spawnPine(Hex hex) {
         if (!hex.canContainObjects) return;
@@ -523,6 +559,17 @@ public class FieldManager implements EncodeableYio{
         addAnimHex(hex);
         hex.animFactor.setValues(1, 0);
         gameController.replayManager.onPalmSpawned(hex);
+    }
+
+
+    private void spawnDisaster(Hex hex) {
+        //TODO finish implementing spawn disaster
+        if (!hex.canContainObjects) return;
+
+        addSolidObject(hex, Obj.DISASTER);
+        addAnimHex(hex);
+        hex.animFactor.setValues(1, 0);
+        gameController.replayManager.onDisasterSpawned(hex);
     }
 
 
