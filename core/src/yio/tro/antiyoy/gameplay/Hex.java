@@ -128,11 +128,6 @@ public class Hex implements ReusableYio, EncodeableYio {
     }
 
 
-    public boolean containsDisaster() {
-        return objectInside == Obj.DISASTER;
-    }
-
-
     public boolean containsObject() {
         return objectInside > 0;
     }

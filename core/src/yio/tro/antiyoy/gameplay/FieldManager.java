@@ -480,7 +480,7 @@ public class FieldManager implements EncodeableYio{
     }
 
 
-    public void expandDisasters() {
+/*    public void expandDisasters() {
         //TODO finish implementing expand disasters
         if (GameRules.replayMode) return;
 
@@ -500,7 +500,7 @@ public class FieldManager implements EncodeableYio{
                 activeHex.blockToTreeFromExpanding = false;
             }
         }
-    }
+    }*/
 
 
     private ArrayList<Hex> getNewPinesList() {
@@ -562,15 +562,15 @@ public class FieldManager implements EncodeableYio{
     }
 
 
-    private void spawnDisaster(Hex hex) {
-        //TODO finish implementing spawn disaster
-        if (!hex.canContainObjects) return;
-
-        addSolidObject(hex, Obj.DISASTER);
-        addAnimHex(hex);
-        hex.animFactor.setValues(1, 0);
-        gameController.replayManager.onDisasterSpawned(hex);
-    }
+//    private void spawnDisaster(Hex hex) {
+//        //TODO finish implementing spawn disaster
+//        if (!hex.canContainObjects) return;
+//
+//        addSolidObject(hex, Obj.DISASTER);
+//        addAnimHex(hex);
+//        hex.animFactor.setValues(1, 0);
+//        gameController.replayManager.onDisasterSpawned(hex);
+//    }
 
 
     public void createPlayerHexCount() {

@@ -584,6 +584,8 @@ public class GameController {
             unit.setReadyToMove(false);
             unit.stopJumping();
         }
+
+
     }
 
 
