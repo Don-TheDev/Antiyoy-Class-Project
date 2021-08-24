@@ -9,7 +9,7 @@ import java.util.Random;
 public class DisasterFactory {
     private static FieldManager fieldManager;
 
-    public Disaster create(Disasters d){
+    public static Disaster create(Disasters d){
         Hex hex = null;
         Random random = new Random();
         while(hex == null){
@@ -27,5 +27,3 @@ public class DisasterFactory {
         DisasterFactory.fieldManager = fieldManager;
     }
 }
-
-// Disaster = DisasterFactory.create(Disasters.LOCUSTS);

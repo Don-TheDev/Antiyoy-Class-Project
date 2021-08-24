@@ -16,9 +16,3 @@ public abstract class Disaster {
 
     public abstract void execute(FieldManager fieldManager);
 }
-enum Disasters {
-    ACID_RAIN,
-    SONG_OF_NATURE,
-    LOCUSTS,
-    EARTHQUAKE
-}

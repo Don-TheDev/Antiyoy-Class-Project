@@ -579,6 +579,7 @@ public class GameController {
         ruleset.onTurnEnd();
         replayManager.onTurnEnded();
         fieldManager.diplomacyManager.onTurnEnded();
+        fieldManager.disasterTurnEnded();
 
         for (Unit unit : unitList) {
             unit.setReadyToMove(false);

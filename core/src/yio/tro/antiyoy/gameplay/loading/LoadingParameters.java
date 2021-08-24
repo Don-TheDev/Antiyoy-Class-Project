@@ -17,7 +17,7 @@ public class LoadingParameters {
     public int difficulty;
     public int colorOffset;
     public boolean slayRules;
-    public boolean disasterRules;
+    public boolean disaster;
     public int campaignLevelIndex;
     public String activeHexes;
     public int turn;
@@ -50,7 +50,7 @@ public class LoadingParameters {
         diplomacyInfo = null;
         fogOfWar = false;
         diplomacy = false;
-        disasterRules = false;
+        disaster = false;
         ulKey = null;
         editorColorFixApplied = false;
         levelCode = "";
@@ -69,7 +69,7 @@ public class LoadingParameters {
         difficulty = src.difficulty;
         colorOffset = src.colorOffset;
         slayRules = src.slayRules;
-        disasterRules = src.disasterRules;
+        disaster = src.disaster;
         campaignLevelIndex = src.campaignLevelIndex;
         activeHexes = src.activeHexes;
         turn = src.turn;
@@ -147,7 +147,7 @@ public class LoadingParameters {
         slayRules = prefs.getBoolean("slay_rules", true);
         fogOfWar = prefs.getBoolean("fog_of_war", false);
         diplomacy = prefs.getBoolean("diplomacy", false);
-        disasterRules = prefs.getBoolean("disasters", true);
+        disaster = prefs.getBoolean("disasters", true);
         userLevelMode = prefs.getBoolean("user_level_mode", false);
         ulKey = prefs.getString("ul_key", null);
         editorColorFixApplied = prefs.getBoolean("editor_color_fix_applied", false);

@@ -2,13 +2,17 @@ package yio.tro.antiyoy.gameplay;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import yio.tro.antiyoy.*;
+import yio.tro.antiyoy.SettingsManager;
+import yio.tro.antiyoy.SoundManagerYio;
+import yio.tro.antiyoy.YioGdxGame;
 import yio.tro.antiyoy.factor_yio.FactorYio;
 import yio.tro.antiyoy.gameplay.data_storage.EncodeableYio;
 import yio.tro.antiyoy.gameplay.diplomacy.DiplomacyManager;
 import yio.tro.antiyoy.gameplay.editor.EditorProvinceData;
 import yio.tro.antiyoy.gameplay.fog_of_war.FogOfWarManager;
 import yio.tro.antiyoy.gameplay.game_view.GameView;
+import yio.tro.antiyoy.gameplay.natural_disasters.DisasterFactory;
+import yio.tro.antiyoy.gameplay.natural_disasters.Disasters;
 import yio.tro.antiyoy.gameplay.rules.GameRules;
 import yio.tro.antiyoy.menu.scenes.Scenes;
 import yio.tro.antiyoy.stuff.GraphicsYio;
@@ -17,6 +21,7 @@ import yio.tro.antiyoy.stuff.Yio;
 
 import java.util.ArrayList;
 import java.util.ListIterator;
+import java.util.Random;
 
 public class FieldManager implements EncodeableYio{
 
@@ -480,28 +485,6 @@ public class FieldManager implements EncodeableYio{
     }
 
 
-/*    public void expandDisasters() {
-        //TODO finish implementing expand disasters
-        if (GameRules.replayMode) return;
-
-        ArrayList<Hex> newDisastersList = getNewDisastersList();
-        ArrayList<Hex> newPinesList = getNewPinesList();
-
-        for (int i = newDisastersList.size() - 1; i >= 0; i--) {
-            spawnDisaster(newDisastersList.get(i));
-        }
-
-        for (int i = newPinesList.size() - 1; i >= 0; i--) {
-            spawnPine(newPinesList.get(i));
-        }
-
-        for (Hex activeHex : activeHexes) {
-            if (activeHex.containsDisaster() && activeHex.blockToTreeFromExpanding) {
-                activeHex.blockToTreeFromExpanding = false;
-            }
-        }
-    }*/
-
 
     private ArrayList<Hex> getNewPinesList() {
         ArrayList<Hex> newPinesList = new ArrayList<Hex>();
@@ -528,18 +511,6 @@ public class FieldManager implements EncodeableYio{
         return newPalmsList;
     }
 
-    private ArrayList<Hex> getNewDisastersList() {
-        //TODO finish implementing disasters list
-        ArrayList<Hex> newDisastersList = new ArrayList<Hex>();
-
-        for (Hex hex : activeHexes) {
-            if (gameController.ruleset.canSpawnDisasterOnHex(hex)) {
-                newDisastersList.add(hex);
-            }
-        }
-
-        return newDisastersList;
-    }
 
 
     private void spawnPine(Hex hex) {
@@ -561,16 +532,6 @@ public class FieldManager implements EncodeableYio{
         gameController.replayManager.onPalmSpawned(hex);
     }
 
-
-//    private void spawnDisaster(Hex hex) {
-//        //TODO finish implementing spawn disaster
-//        if (!hex.canContainObjects) return;
-//
-//        addSolidObject(hex, Obj.DISASTER);
-//        addAnimHex(hex);
-//        hex.animFactor.setValues(1, 0);
-//        gameController.replayManager.onDisasterSpawned(hex);
-//    }
 
 
     public void createPlayerHexCount() {
@@ -1352,6 +1313,29 @@ public class FieldManager implements EncodeableYio{
         focusedHex = getHexByPos(x, y);
 
     }
+
+    //Creates chance for Natural Disasters to spawn, assuming they are enabled
+    public void disasterTurnEnded(){
+        if(GameRules.naturalDisastersEnabled){
+            if(new Random().nextInt(100) % 13 == 1){
+                switch(new Random().nextInt(4)){
+                    case 0:
+                        DisasterFactory.create(Disasters.LOCUSTS).execute(this);
+                        break;
+                    case 1:
+                        DisasterFactory.create(Disasters.ACID_RAIN).execute(this);
+                        break;
+                    case 2:
+                        DisasterFactory.create(Disasters.EARTHQUAKE).execute(this);
+                        break;
+                    case 3:
+                        DisasterFactory.create(Disasters.SONG_OF_NATURE).execute(this);
+                        break;
+                }
+            }
+        }
+    }
+
 
 
     @Override
