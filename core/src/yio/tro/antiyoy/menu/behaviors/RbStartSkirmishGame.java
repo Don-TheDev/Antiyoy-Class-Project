@@ -2,7 +2,6 @@ package yio.tro.antiyoy.menu.behaviors;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Preferences;
-import yio.tro.antiyoy.gameplay.GameController;
 import yio.tro.antiyoy.gameplay.LevelSize;
 import yio.tro.antiyoy.gameplay.loading.LoadingManager;
 import yio.tro.antiyoy.gameplay.loading.LoadingParameters;
@@ -39,6 +38,7 @@ public class RbStartSkirmishGame extends Reaction {
         instance.slayRules = Scenes.sceneMoreSkirmishOptions.chkSlayRules.isChecked();
         instance.fogOfWar = Scenes.sceneMoreSkirmishOptions.chkFogOfWar.isChecked();
         instance.diplomacy = Scenes.sceneMoreSkirmishOptions.chkDiplomacy.isChecked();
+        instance.disasters = Scenes.sceneMoreSkirmishOptions.chkDisasters.isChecked();
         instance.genProvinces = getGenProvinces();
 
         LoadingManager.getInstance().startGame(instance);

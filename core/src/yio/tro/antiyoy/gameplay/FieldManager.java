@@ -21,7 +21,6 @@ import yio.tro.antiyoy.stuff.Yio;
 
 import java.util.ArrayList;
 import java.util.ListIterator;
-import java.util.Random;
 
 public class FieldManager implements EncodeableYio{
 
@@ -94,6 +93,8 @@ public class FieldManager implements EncodeableYio{
         propagationList = new ArrayList<>();
         massMarchManager = new MassMarchManager(this);
         automaticTransitionWorker = new AutomaticTransitionWorker(this);
+
+        DisasterFactory.setFieldManager(this);
     }
 
 
@@ -1317,8 +1318,9 @@ public class FieldManager implements EncodeableYio{
     //Creates chance for Natural Disasters to spawn, assuming they are enabled
     public void disasterTurnEnded(){
         if(GameRules.naturalDisastersEnabled){
-            if(new Random().nextInt(100) % 13 == 1){
-                switch(new Random().nextInt(4)){
+//            System.exit(0);
+            if(/*gameController.random.nextInt(2) == 1*/true){
+                switch(gameController.random.nextInt(4)){
                     case 0:
                         DisasterFactory.create(Disasters.LOCUSTS).execute(this);
                         break;

@@ -365,5 +365,6 @@ public class LoadingManager {
         GameRules.setSlayRules(parameters.slayRules);
         GameRules.setFogOfWarEnabled(parameters.fogOfWar);
         GameRules.setDiplomacyEnabled(parameters.diplomacy);
+        GameRules.setNaturalDisastersEnabled(parameters.disasters);
     }
 }

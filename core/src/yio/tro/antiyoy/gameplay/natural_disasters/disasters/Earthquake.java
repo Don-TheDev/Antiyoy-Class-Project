@@ -14,5 +14,21 @@ public class Earthquake extends Disaster
     @Override
     public void execute(FieldManager fieldManager)
     {
+        System.out.println("The earth is dancing at " + hex.pos);
+        destroyTower(fieldManager, hex);
+
+
+        Hex nextHex; // hex in direction
+        for(int direction = 0; direction < 6; direction++){
+            nextHex = fieldManager.adjacentHex(hex,direction);
+
+            destroyTower(fieldManager, nextHex);
+        }
+    }
+
+    private void destroyTower(FieldManager fieldManager, Hex hex) {
+        if (hex.containsTower()) {
+            fieldManager.cleanOutHex(hex);
+        }
     }
 }

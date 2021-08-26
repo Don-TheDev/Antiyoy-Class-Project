@@ -16,7 +16,9 @@ public class DisasterFactory {
         Hex hex = null;
         Random random = new Random();
         while(hex == null){
-            hex = fieldManager.getHex(random.nextInt(fieldManager.fWidth), random.nextInt(fieldManager.fHeight));
+//            int x = fieldManager.gameController.random.nextInt(fieldManager.fWidth),
+//                    y = fieldManager.gameController.random.nextInt(fieldManager.fHeight);
+            hex = fieldManager.getRandomActivehex();
         }
         switch(d){
             case ACID_RAIN:

@@ -2,6 +2,7 @@ package yio.tro.antiyoy.gameplay;
 
 public class Obj {
 
+    public static final int EMPTY = 0;
     public static final int PINE = 1;
     public static final int PALM = 2;
     public static final int TOWN = 3;
