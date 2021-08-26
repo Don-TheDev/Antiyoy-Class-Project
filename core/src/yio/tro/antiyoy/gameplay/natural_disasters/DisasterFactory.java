@@ -2,7 +2,10 @@ package yio.tro.antiyoy.gameplay.natural_disasters;
 
 import yio.tro.antiyoy.gameplay.FieldManager;
 import yio.tro.antiyoy.gameplay.Hex;
+import yio.tro.antiyoy.gameplay.natural_disasters.disasters.AcidRain;
+import yio.tro.antiyoy.gameplay.natural_disasters.disasters.Earthquake;
 import yio.tro.antiyoy.gameplay.natural_disasters.disasters.Locusts;
+import yio.tro.antiyoy.gameplay.natural_disasters.disasters.SongOfNature;
 
 import java.util.Random;
 
@@ -16,9 +19,14 @@ public class DisasterFactory {
             hex = fieldManager.getHex(random.nextInt(fieldManager.fWidth), random.nextInt(fieldManager.fHeight));
         }
         switch(d){
+            case ACID_RAIN:
+                return new AcidRain("Acid Rain", 2, hex);
+            case EARTHQUAKE:
+                return new Earthquake("Earthquake", 2, hex);
             case LOCUSTS:
                 return new Locusts("Locusts", 2, hex);
-            case ACID_RAIN:
+            case SONG_OF_NATURE:
+                return new SongOfNature("Song of Nature", 2, hex);
         }
         return null;
     }
