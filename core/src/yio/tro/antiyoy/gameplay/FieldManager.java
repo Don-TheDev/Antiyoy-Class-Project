@@ -1217,17 +1217,19 @@ public class FieldManager implements EncodeableYio{
             if (p != null && hex.sameFraction(p) && !adjacentProvinces.contains(p)) adjacentProvinces.add(p);
         }
         if (adjacentProvinces.size() >= 2) {
-            int sum = 0;
+            int sum = 0, dPoints = 0;
             Hex capital = getMaxProvinceFromList(adjacentProvinces).getCapital();
             ArrayList<Hex> hexArrayList = new ArrayList<Hex>();
 //            YioGdxGame.say("uniting provinces: " + adjacentProvinces.size());
             for (Province province : adjacentProvinces) {
                 sum += province.money;
+                dPoints += province.disasterPoints;
                 hexArrayList.addAll(province.hexList);
                 removeProvince(province);
             }
             Province unitedProvince = new Province(gameController, hexArrayList);
             unitedProvince.money = sum;
+            unitedProvince.disasterPoints = dPoints;
             unitedProvince.setCapital(capital);
             addProvince(unitedProvince);
         }

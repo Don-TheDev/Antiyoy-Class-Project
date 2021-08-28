@@ -13,7 +13,7 @@ import java.util.*;
 public class Province {
 
     public static final int DEFAULT_MONEY = 10;
-    public int money;
+    public int money, disasterPoints;
     public ArrayList<Hex> hexList, tempList;
     private GameController gameController;
     public String name;
@@ -26,9 +26,9 @@ public class Province {
         this.hexList = new ArrayList<>(hexList);
         tempList = new ArrayList<>();
         money = DEFAULT_MONEY;
+        disasterPoints = 0;
         tempPoint = new PointYio();
     }
-
 
     void placeCapitalInRandomPlace(Random random) {
         if (GameRules.replayMode) return;
@@ -48,7 +48,6 @@ public class Province {
         updateName();
     }
 
-
     boolean hasCapital() {
         for (Hex hex : hexList) {
             if (hex.objectInside == Obj.TOWN) {
@@ -58,7 +57,6 @@ public class Province {
         return false;
     }
 
-
     public Hex getStrongTower() {
         for (Hex hex : hexList) {
             if (hex.objectInside == Obj.STRONG_TOWER) {
@@ -67,8 +65,6 @@ public class Province {
         }
         return null;
     }
-
-
     public Hex getCapital() {
         for (Hex hex : hexList)
             if (hex.objectInside == Obj.TOWN)
@@ -76,12 +72,9 @@ public class Province {
         return hexList.get(0);
     }
 
-
     public Hex getRandomHex() {
         return hexList.get(gameController.random.nextInt(hexList.size()));
     }
-
-
     private Hex getAnyHexExceptTowers() {
         tempList.clear();
         for (Hex hex : hexList) {
@@ -93,15 +86,12 @@ public class Province {
         return tempList.get(YioGdxGame.random.nextInt(tempList.size()));
     }
 
-
     Province getSnapshotCopy() {
         Province copy = new Province(gameController, hexList);
         copy.money = money;
 //        copy.capital = capital.getSnapshotCopy();
         return copy;
     }
-
-
     private Hex getFreeHex(Random random) {
         tempList.clear();
         for (Hex hex : hexList)
@@ -111,19 +101,14 @@ public class Province {
         return tempList.get(random.nextInt(tempList.size()));
     }
 
-
     public int getProfit() {
-        return getIncome() - getTaxes() + getDotations();
+        return getIncome() - getTaxes() + getDonations();
     }
-
-
     public String getProfitString() {
         int balance = getProfit();
         if (balance > 0) return "+" + balance;
         return "" + balance;
     }
-
-
     public int getIncome() {
         int income = 0;
 
@@ -133,8 +118,6 @@ public class Province {
 
         return income;
     }
-
-
     public int countObjects(int objType) {
         int c = 0;
         for (Hex hex : hexList) {
@@ -143,7 +126,6 @@ public class Province {
         }
         return c;
     }
-
 
     int getTaxes() {
         int taxes = 0;
@@ -154,8 +136,6 @@ public class Province {
 
         return taxes;
     }
-
-
     public int getUnitsTaxes() {
         int sum = 0;
         for (Hex hex : hexList) {
@@ -164,8 +144,6 @@ public class Province {
         }
         return sum;
     }
-
-
     public int getTowerTaxes() {
         int sum = 0;
         for (Hex hex : hexList) {
@@ -174,15 +152,11 @@ public class Province {
         }
         return sum;
     }
-
-
-    public int getDotations() {
+    public int getDonations() {
         if (!GameRules.diplomacyEnabled) return 0;
 
         return gameController.fieldManager.diplomacyManager.getProvinceDotations(this);
     }
-
-
     public float getIncomeCoefficient() {
         int n = 0;
         int fraction = getFraction();
@@ -196,19 +170,16 @@ public class Province {
         return 1f / (float) n;
     }
 
-
     private void clearFromHouses() {
         for (Hex hex : hexList)
             if (hex.objectInside == Obj.TOWN)
                 gameController.cleanOutHex(hex);
     }
 
-
     public boolean isSelected() {
         if (hexList.size() == 0) return false;
         return hexList.get(0).isSelected();
     }
-
 
     public String getName() {
         if (name == null) {
@@ -216,19 +187,13 @@ public class Province {
         }
         return name;
     }
-
-
     public void updateName() {
         setName(gameController.namingManager.getProvinceName(this));
     }
-
-
     public void setName(String name) {
         this.name = name;
         nameWidth = 0.5f * YioGdxGame.getTextWidth(Fonts.microFont, name) + 0.1f * gameController.yioGdxGame.gameView.hexViewSize;
     }
-
-
     void setCapital(Hex hex) {
         clearFromHouses();
         gameController.addSolidObject(hex, Obj.TOWN);
@@ -243,12 +208,9 @@ public class Province {
         return false;
     }
 
-
     public boolean canAiAffordUnit(int strength) {
         return canAiAffordUnit(strength, strength + 1);
     }
-
-
     public boolean canAiAffordUnit(int strength, int turnsToSurvive) {
         if (GameRules.diplomacyEnabled) {
             if (!gameController.fieldManager.diplomacyManager.isProvinceAllowedToBuildUnit(this, strength)) {
@@ -259,14 +221,11 @@ public class Province {
         int newIncome = getProfit() - gameController.ruleset.getUnitTax(strength);
         return money + turnsToSurvive * newIncome >= 0;
     }
-
-
     public boolean canBuildUnit(int strength) {
         if (GameRules.replayMode) return true;
 
         return gameController.ruleset.canBuildUnit(this, strength);
     }
-
 
     public boolean isNearFraction(int otherFraction) {
         for (Hex hex : hexList) {
@@ -282,31 +241,23 @@ public class Province {
         return false;
     }
 
-
     public boolean hasMoneyForTower() {
         return money >= GameRules.PRICE_TOWER;
     }
-
-
     public boolean hasMoneyForFarm() {
         return money >= getCurrentFarmPrice();
     }
-
 
     public int getCurrentFarmPrice() {
         return GameRules.PRICE_FARM + getExtraFarmCost();
     }
 
-
     public boolean hasMoneyForStrongTower() {
         return money >= GameRules.PRICE_STRONG_TOWER;
     }
-
-
     public boolean hasMoneyForTree() {
         return money >= GameRules.PRICE_TREE;
     }
-
 
     public int getExtraFarmCost() {
         int c = 0;
@@ -320,7 +271,6 @@ public class Province {
         return c;
     }
 
-
     public boolean equals(Province province) {
         for (Hex hex : hexList) {
             if (!province.containsHex(hex)) return false;
@@ -333,11 +283,9 @@ public class Province {
         return true;
     }
 
-
     boolean containsHex(Hex hex) {
         return hexList.contains(hex);
     }
-
 
     public void focusCameraOnThis() {
         tempPoint.reset();
@@ -353,12 +301,10 @@ public class Province {
         gameController.cameraController.focusOnPoint(tempPoint);
     }
 
-
     public int getFraction() {
         if (hexList.size() == 0) return -1;
         return hexList.get(0).fraction;
     }
-
 
     void addHex(Hex hex) {
         if (containsHex(hex)) return;
@@ -366,16 +312,13 @@ public class Province {
         iterator.add(hex);
     }
 
-
     void setHexList(ArrayList<Hex> list) {
         hexList = new ArrayList<Hex>(list);
     }
 
-
     void close() {
         gameController = null;
     }
-
 
     @Override
     public String toString() {

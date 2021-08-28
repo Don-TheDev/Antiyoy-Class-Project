@@ -70,7 +70,7 @@ public class YioGdxGame extends ApplicationAdapter implements InputProcessor {
     TextureRegion splash;
     ArrayList<Integer> backButtonIds;
     static boolean screenVerySmall;
-    public int balanceIndicator[];
+    public int[] balanceIndicator;
     public CampaignLevelFactory campaignLevelFactory;
     public SaveSystem saveSystem;
     FactorYio blackoutFactor;

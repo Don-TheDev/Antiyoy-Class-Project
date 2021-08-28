@@ -16,6 +16,7 @@ public class SceneFinances extends AbstractModalScene{
 
     public ButtonYio coinButton;
     MoneyViewElement profitViewElement;
+    MoneyViewElement disasterPointsViewElement;
     MoneyViewElement balanceViewElement;
 
 
@@ -81,7 +82,9 @@ public class SceneFinances extends AbstractModalScene{
 
     private void createBalanceViewElement() {
         initBalanceViewElement();
+        initDisasterPointsViewElement();
         balanceViewElement.appear();
+        disasterPointsViewElement.appear();
     }
 
 
@@ -95,9 +98,27 @@ public class SceneFinances extends AbstractModalScene{
         balanceViewElement.setReaction(getBalanceViewReaction());
         menuControllerYio.addElementToScene(balanceViewElement);
     }
+    private void initDisasterPointsViewElement() {
+        if (disasterPointsViewElement != null) return;
+
+        disasterPointsViewElement = new MoneyViewElement(menuControllerYio);
+        disasterPointsViewElement.setPosition(generateRectangle(0.12, 0.945, 0.2, 0.06));
+        disasterPointsViewElement.setAnimation(Animation.up);
+        disasterPointsViewElement.setBehavior(getDisasterPointsViewBehavior());
+        disasterPointsViewElement.setReaction(getDisasterPointsViewReaction());
+        menuControllerYio.addElementToScene(balanceViewElement);
+    }
 
 
     private Reaction getBalanceViewReaction() {
+        return new Reaction() {
+            @Override
+            public void perform(ButtonYio buttonYio) {
+                Scenes.sceneIncomeGraph.create();
+            }
+        };
+    }
+    private Reaction getDisasterPointsViewReaction() {
         return new Reaction() {
             @Override
             public void perform(ButtonYio buttonYio) {
@@ -115,6 +136,17 @@ public class SceneFinances extends AbstractModalScene{
                 Province selectedProvince = gameController.fieldManager.selectedProvince;
                 if (selectedProvince == null) return 0;
                 return selectedProvince.money;
+            }
+        };
+    }
+    private MveBehavior getDisasterPointsViewBehavior() {
+        return new MveBehavior() {
+            @Override
+            public int getTitleValue() {
+                GameController gameController = menuControllerYio.yioGdxGame.gameController;
+                Province selectedProvince = gameController.fieldManager.selectedProvince;
+                if (selectedProvince == null) return 0;
+                return selectedProvince.disasterPoints;
             }
         };
     }

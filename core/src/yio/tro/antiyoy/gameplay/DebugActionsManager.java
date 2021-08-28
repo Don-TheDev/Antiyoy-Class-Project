@@ -56,7 +56,7 @@ public class DebugActionsManager {
         System.out.println("selectedProvince = " + selectedProvince);
         System.out.println("selectedProvince.getBalance() = " + selectedProvince.getProfit());
         System.out.println("selectedProvince.getIncome() = " + selectedProvince.getIncome());
-        System.out.println("selectedProvince.getDotations() = " + selectedProvince.getDotations());
+        System.out.println("selectedProvince.getDotations() = " + selectedProvince.getDonations());
         System.out.println("selectedProvince.getTaxes() = " + selectedProvince.getTaxes());
         System.out.println("selectedProvince.getTowerTaxes() = " + selectedProvince.getTowerTaxes());
         System.out.println("selectedProvince.getUnitsTaxes() = " + selectedProvince.getUnitsTaxes());
