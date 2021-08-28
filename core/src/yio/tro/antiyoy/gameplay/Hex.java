@@ -138,6 +138,11 @@ public class Hex implements ReusableYio, EncodeableYio {
     }
 
 
+    public boolean containsFarm() {
+        return objectInside == Obj.FARM;
+    }
+
+
     public boolean containsBuilding() {
         return objectInside == Obj.TOWN
                 || objectInside == Obj.TOWER

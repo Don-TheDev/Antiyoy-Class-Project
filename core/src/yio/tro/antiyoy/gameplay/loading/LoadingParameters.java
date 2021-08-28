@@ -17,7 +17,7 @@ public class LoadingParameters {
     public int difficulty;
     public int colorOffset;
     public boolean slayRules;
-    public boolean disaster;
+    public boolean disasters;
     public int campaignLevelIndex;
     public String activeHexes;
     public int turn;
@@ -50,7 +50,7 @@ public class LoadingParameters {
         diplomacyInfo = null;
         fogOfWar = false;
         diplomacy = false;
-        disaster = false;
+        disasters = false;
         ulKey = null;
         editorColorFixApplied = false;
         levelCode = "";
@@ -69,7 +69,7 @@ public class LoadingParameters {
         difficulty = src.difficulty;
         colorOffset = src.colorOffset;
         slayRules = src.slayRules;
-        disaster = src.disaster;
+        disasters = src.disasters;
         campaignLevelIndex = src.campaignLevelIndex;
         activeHexes = src.activeHexes;
         turn = src.turn;
@@ -119,6 +119,7 @@ public class LoadingParameters {
         System.out.println("replay = " + replay);
         System.out.println("fogOfWar = " + fogOfWar);
         System.out.println("diplomacy = " + diplomacy);
+        System.out.println("disasters = " + disasters);
         System.out.println("userLevelMode = " + userLevelMode);
         System.out.println("ulKey = " + ulKey);
         System.out.println("editorColorFixApplied = " + editorColorFixApplied);
@@ -147,7 +148,7 @@ public class LoadingParameters {
         slayRules = prefs.getBoolean("slay_rules", true);
         fogOfWar = prefs.getBoolean("fog_of_war", false);
         diplomacy = prefs.getBoolean("diplomacy", false);
-        disaster = prefs.getBoolean("disasters", true);
+        disasters = prefs.getBoolean("disasters", true);
         userLevelMode = prefs.getBoolean("user_level_mode", false);
         ulKey = prefs.getString("ul_key", null);
         editorColorFixApplied = prefs.getBoolean("editor_color_fix_applied", false);

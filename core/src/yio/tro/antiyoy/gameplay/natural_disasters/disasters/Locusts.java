@@ -13,13 +13,20 @@ public class Locusts extends Disaster {
 
     @Override
     public void execute(FieldManager fieldManager) {
-        if (hex.objectInside == 6) {
-            hex.objectInside = 0;
+        System.out.println("Locusts are attacking at " + hex.pos);
+        destroyFarm(fieldManager, hex);
+
+        Hex nextHex; // hex in direction
+        for(int direction = 0; direction < 6; direction++){
+            nextHex = fieldManager.adjacentHex(hex,direction);
+
+            destroyFarm(fieldManager, nextHex);
         }
-        for(int i = 0; i < 6; i++){
-            if(fieldManager.adjacentHex(hex, i).objectInside == 6){
-                fieldManager.adjacentHex(hex, i).objectInside = 0;
-            }
+    }
+
+    private void destroyFarm(FieldManager fieldManager, Hex hex) {
+        if (hex.containsFarm()) {
+            fieldManager.cleanOutHex(hex);
         }
     }
 }
