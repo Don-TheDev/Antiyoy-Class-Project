@@ -14,7 +14,7 @@ import yio.tro.antiyoy.menu.scenes.Scenes;
 
 public class SceneFinances extends AbstractModalScene{
 
-    public ButtonYio coinButton;
+    public ButtonYio coinButton, disasterPointButton;
     MoneyViewElement profitViewElement;
     MoneyViewElement disasterPointsViewElement;
     MoneyViewElement balanceViewElement;
@@ -23,8 +23,10 @@ public class SceneFinances extends AbstractModalScene{
     public SceneFinances(MenuControllerYio menuControllerYio) {
         super(menuControllerYio);
         profitViewElement = null;
+        disasterPointsViewElement = null;
         balanceViewElement = null;
         coinButton = null;
+        disasterPointButton = null;
     }
 
 
@@ -33,8 +35,10 @@ public class SceneFinances extends AbstractModalScene{
         if (isAlreadyShown()) return;
 
         createCoinButton();
+        createDisasterPointButton();
         createProfitViewElement();
         createBalanceViewElement();
+        createDisasterViewElement();
     }
 
 
@@ -42,6 +46,9 @@ public class SceneFinances extends AbstractModalScene{
         if (coinButton == null) return false;
         if (coinButton.getFactor().get() != 1) return false;
         if (coinButton.getFactor().getGravity() <= 0) return false;
+        if (disasterPointButton == null) return false;
+        if (disasterPointButton.getFactor().get() != 1) return false;
+        if (disasterPointButton.getFactor().getGravity() <= 0) return false;
         return true;
     }
 
@@ -62,16 +69,35 @@ public class SceneFinances extends AbstractModalScene{
         coinButton.setReaction(Reaction.rbShowIncomeGraph);
     }
 
+    private void createDisasterPointButton() {
+        disasterPointButton = menuControllerYio.getButtonById(37); //todo
+        if (disasterPointButton == null) { // init
+            disasterPointButton = buttonFactory.getButton(generateSquare(0, 0.9, 0.07), 650, null);
+            disasterPointButton.setAnimation(Animation.up);
+            disasterPointButton.setPressSound(SoundManagerYio.soundCoin);
+            disasterPointButton.enableRectangularMask();
+        }
+        loadDisasterPointButtonTexture();
+        disasterPointButton.appearFactor.appear(3, 2);
+        disasterPointButton.setTouchable(true);
+        disasterPointButton.setReaction(Reaction.rbShowIncomeGraph);
+    }
 
     public void onSkinChanged() {
         if (coinButton != null) {
             coinButton.resetTexture();
+        }
+        if (disasterPointButton != null) {
+            disasterPointButton.resetTexture();
         }
     }
 
 
     void loadCoinButtonTexture() {
         menuControllerYio.loadButtonOnce(coinButton, getSkinManager().getCoinTexturePath());
+    }
+    void loadDisasterPointButtonTexture() {
+        menuControllerYio.loadButtonOnce(disasterPointButton, getSkinManager().getDisasterPointTexturePath());
     }
 
 
@@ -82,8 +108,11 @@ public class SceneFinances extends AbstractModalScene{
 
     private void createBalanceViewElement() {
         initBalanceViewElement();
-        initDisasterPointsViewElement();
         balanceViewElement.appear();
+    }
+
+    private void createDisasterViewElement() {
+        initDisasterPointsViewElement();
         disasterPointsViewElement.appear();
     }
 
@@ -102,11 +131,11 @@ public class SceneFinances extends AbstractModalScene{
         if (disasterPointsViewElement != null) return;
 
         disasterPointsViewElement = new MoneyViewElement(menuControllerYio);
-        disasterPointsViewElement.setPosition(generateRectangle(0.12, 0.945, 0.2, 0.06));
+        disasterPointsViewElement.setPosition(generateRectangle(0.12, 0.9, 0.2, 0.06));
         disasterPointsViewElement.setAnimation(Animation.up);
         disasterPointsViewElement.setBehavior(getDisasterPointsViewBehavior());
         disasterPointsViewElement.setReaction(getDisasterPointsViewReaction());
-        menuControllerYio.addElementToScene(balanceViewElement);
+        menuControllerYio.addElementToScene(disasterPointsViewElement);
     }
 
 
@@ -156,8 +185,6 @@ public class SceneFinances extends AbstractModalScene{
         initProfitViewElement();
         profitViewElement.appear();
     }
-
-
     private void initProfitViewElement() {
         if (profitViewElement != null) return;
 
@@ -170,8 +197,6 @@ public class SceneFinances extends AbstractModalScene{
         profitViewElement.setReaction(getProfitViewReaction());
         menuControllerYio.addElementToScene(profitViewElement);
     }
-
-
     private Reaction getProfitViewReaction() {
         return new Reaction() {
             @Override
@@ -180,8 +205,6 @@ public class SceneFinances extends AbstractModalScene{
             }
         };
     }
-
-
     private MveBehavior getProfitViewBehavior() {
         return new MveBehavior() {
             @Override
