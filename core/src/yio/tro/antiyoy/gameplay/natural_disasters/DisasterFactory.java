@@ -16,10 +16,15 @@ public class DisasterFactory {
         Hex hex = null;
         Random random = new Random();
         while(hex == null){
-//            int x = fieldManager.gameController.random.nextInt(fieldManager.fWidth),
-//                    y = fieldManager.gameController.random.nextInt(fieldManager.fHeight);
             hex = fieldManager.getRandomActivehex();
         }
+        return getDisaster(d, hex);
+    }
+    public static Disaster create(Disasters d, Hex hex){
+        return getDisaster(d, hex);
+    }
+
+    private static Disaster getDisaster(Disasters d, Hex hex) {
         switch(d){
             case ACID_RAIN:
                 return new AcidRain("Acid Rain", 2, hex);
