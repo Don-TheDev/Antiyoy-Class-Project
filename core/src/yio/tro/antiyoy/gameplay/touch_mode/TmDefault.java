@@ -71,6 +71,7 @@ public class TmDefault extends TouchMode{
         if (fieldManager.focusedHex != null && gameController.isPlayerTurn()) {
             selectionManager.focusedHexActions(fieldManager.focusedHex);
             checkForDiplomaticForeignSelection(fieldManager.focusedHex);
+            checkForNaturalDisasterSelection(fieldManager.focusedHex);
         }
         return true;
     }
@@ -99,6 +100,14 @@ public class TmDefault extends TouchMode{
         diplomacyElement.applyClickByFraction(fraction);
     }
 
+    private void checkForNaturalDisasterSelection(Hex focusedHex) {
+        if (!GameRules.naturalDisastersEnabled) return;
+        if (gameController.selectionManager.isInAreaSelectionMode()) return;
+
+        FieldManager fieldManager = gameController.fieldManager;
+
+
+    }
 
     @Override
     public String getNameKey() {
