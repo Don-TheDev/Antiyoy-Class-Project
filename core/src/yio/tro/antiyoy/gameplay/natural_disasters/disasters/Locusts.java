@@ -22,11 +22,19 @@ public class Locusts extends Disaster {
 
             destroyFarm(fieldManager, nextHex);
         }
+
+        fieldManager.sayDisaster(this);
+
     }
 
     private void destroyFarm(FieldManager fieldManager, Hex hex) {
         if (hex.containsFarm()) {
             fieldManager.cleanOutHex(hex);
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Locusts attacked a farm";
     }
 }

@@ -29,6 +29,9 @@ public class SongOfNature extends Disaster
 
             spawnTree(fieldManager, nextHex);
         }
+
+        fieldManager.sayDisaster(this);
+
     }
 
 
@@ -42,5 +45,10 @@ public class SongOfNature extends Disaster
                 fieldManager.spawnTree(hex);
             }
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Song Of Nature spawned a tree";
     }
 }

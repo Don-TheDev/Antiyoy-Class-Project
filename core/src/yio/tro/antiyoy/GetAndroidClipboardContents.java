@@ -7,7 +7,7 @@ import com.badlogic.gdx.utils.Clipboard;
 
 import java.util.TimerTask;
 
-public class GetAndroidClipboardContents extends TimerTask{
+    public class GetAndroidClipboardContents extends TimerTask{
 
     private Handler handler = new Handler(Looper.getMainLooper());
     String result;
