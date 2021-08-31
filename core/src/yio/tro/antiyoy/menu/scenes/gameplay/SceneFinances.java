@@ -48,8 +48,7 @@ public class SceneFinances extends AbstractModalScene{
         if (coinButton.getFactor().getGravity() <= 0) return false;
         if (disasterPointButton == null) return false;
         if (disasterPointButton.getFactor().get() != 1) return false;
-        if (disasterPointButton.getFactor().getGravity() <= 0) return false;
-        return true;
+        return !(disasterPointButton.getFactor().getGravity() <= 0);
     }
 
 

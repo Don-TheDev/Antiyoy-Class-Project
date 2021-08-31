@@ -1326,7 +1326,6 @@ public class FieldManager implements EncodeableYio{
     //Creates chance for Natural Disasters to spawn, assuming they are enabled
     public void disasterTurnEnded(){
         if(GameRules.naturalDisastersEnabled){
-//            System.exit(0);
             if(/*gameController.random.nextInt(2) == 1*/true){
                 switch(gameController.random.nextInt(4)){
                     case 0:
