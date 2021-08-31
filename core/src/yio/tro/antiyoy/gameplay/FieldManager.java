@@ -11,6 +11,7 @@ import yio.tro.antiyoy.gameplay.diplomacy.DiplomacyManager;
 import yio.tro.antiyoy.gameplay.editor.EditorProvinceData;
 import yio.tro.antiyoy.gameplay.fog_of_war.FogOfWarManager;
 import yio.tro.antiyoy.gameplay.game_view.GameView;
+import yio.tro.antiyoy.gameplay.natural_disasters.Disaster;
 import yio.tro.antiyoy.gameplay.natural_disasters.DisasterFactory;
 import yio.tro.antiyoy.gameplay.natural_disasters.Disasters;
 import yio.tro.antiyoy.gameplay.rules.GameRules;
@@ -19,6 +20,7 @@ import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.PointYio;
 import yio.tro.antiyoy.stuff.Yio;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.ListIterator;
 
@@ -60,8 +62,12 @@ public class FieldManager implements EncodeableYio{
     public MassMarchManager massMarchManager;
     public AutomaticTransitionWorker automaticTransitionWorker;
 
+        public void sayDisaster(Disaster disaster) {
+            JFrame f = new JFrame();
+            JOptionPane.showMessageDialog(f, disaster.toString(), "Alert", JOptionPane.INFORMATION_MESSAGE);
+        }
 
-    public FieldManager(GameController gameController) {
+        public FieldManager(GameController gameController) {
         this.gameController = gameController;
 
         cos60 = (float) Math.cos(Math.PI / 3d);

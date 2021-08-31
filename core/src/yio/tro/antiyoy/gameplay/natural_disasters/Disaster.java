@@ -8,6 +8,10 @@ public abstract class Disaster {
     protected final int radius;
     protected final Hex hex;
 
+    public String getName() {
+        return name;
+    }
+
     public Disaster(String name, int radius, Hex hex){
         this.name = name;
         this.radius = radius;

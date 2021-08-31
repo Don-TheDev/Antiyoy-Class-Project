@@ -24,11 +24,19 @@ public class Earthquake extends Disaster
 
             destroyTower(fieldManager, nextHex);
         }
+
+        fieldManager.sayDisaster(this);
+
     }
 
     private void destroyTower(FieldManager fieldManager, Hex hex) {
         if (hex.containsTower()) {
             fieldManager.cleanOutHex(hex);
         }
+    }
+
+    @Override
+    public String toString() {
+        return "An earthquake occurred";
     }
 }

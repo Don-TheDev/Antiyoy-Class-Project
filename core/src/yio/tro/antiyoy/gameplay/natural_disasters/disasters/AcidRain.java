@@ -25,6 +25,9 @@ public class AcidRain extends Disaster
 
             destroyUnitOrTree(fieldManager, nextHex);
         }
+
+        fieldManager.sayDisaster(this);
+
     }
 
     private void destroyUnitOrTree(FieldManager fieldManager, Hex hex) {
@@ -35,4 +38,10 @@ public class AcidRain extends Disaster
             fieldManager.cleanOutHex(hex);
         }
     }
+
+    @Override
+    public String toString() {
+        return "Acid Rain hits";
+    }
 }
+

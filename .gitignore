@@ -34,3 +34,5 @@ local.properties
 /desktop/build/
 /ios/build/
 /.gradle/
+local.properties
+local.properties
