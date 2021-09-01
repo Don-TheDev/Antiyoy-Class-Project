@@ -13,7 +13,7 @@ import yio.tro.antiyoy.menu.scenes.Scenes;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.RectangleYio;
 
-public class SceneEditorOverlay extends AbstractScene{
+public class SceneEditorOverlay extends AbstractScene {
 
 
     public static final double PANEL_HEIGHT = GraphicsYio.convertToHeight(0.11);

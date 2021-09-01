@@ -16,7 +16,7 @@ import yio.tro.antiyoy.stuff.RectangleYio;
 
 import java.util.ArrayList;
 
-public class EditLandElement extends InterfaceElement{
+public class EditLandElement extends InterfaceElement {
 
     MenuControllerYio menuControllerYio;
     public FactorYio appearFactor;

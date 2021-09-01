@@ -3,7 +3,7 @@ package yio.tro.antiyoy.menu.render;
 import yio.tro.antiyoy.menu.customizable_list.AbstractCustomListItem;
 import yio.tro.antiyoy.menu.customizable_list.TitleListItem;
 
-public class RenderTitleListItem extends AbstractRenderCustomListItem{
+public class RenderTitleListItem extends AbstractRenderCustomListItem {
 
     private TitleListItem titleItem;
 

@@ -8,7 +8,7 @@ import yio.tro.antiyoy.menu.customizable_list.SampleListItem;
 import yio.tro.antiyoy.menu.customizable_list.TitleListItem;
 import yio.tro.antiyoy.stuff.LanguagesManager;
 
-public class SceneTestScreen extends AbstractScene{
+public class SceneTestScreen extends AbstractScene {
 
 
     private double labelHeight;

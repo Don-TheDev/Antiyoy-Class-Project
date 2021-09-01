@@ -9,5 +9,4 @@ public enum AcActionType {
     show,
 
     choose,
-
 }

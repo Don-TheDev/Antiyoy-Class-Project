@@ -7,7 +7,7 @@ import yio.tro.antiyoy.gameplay.Obj;
 
 import java.util.ArrayList;
 
-public class RaPineSpawned extends RepAction{
+public class RaPineSpawned extends RepAction {
 
     Hex hex;
 

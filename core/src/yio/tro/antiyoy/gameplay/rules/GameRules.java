@@ -100,5 +100,7 @@ public class GameRules {
         GameRules.diplomacyEnabled = diplomacyEnabled;
     }
 
-    public static void setNaturalDisastersEnabled(boolean disastersEnabled){ GameRules.naturalDisastersEnabled = disastersEnabled;}
+    public static void setNaturalDisastersEnabled(boolean disastersEnabled) {
+        GameRules.naturalDisastersEnabled = disastersEnabled;
+    }
 }

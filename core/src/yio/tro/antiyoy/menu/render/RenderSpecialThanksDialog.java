@@ -4,7 +4,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import yio.tro.antiyoy.menu.scrollable_list.ListItemYio;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderSpecialThanksDialog extends RenderScrollableList{
+public class RenderSpecialThanksDialog extends RenderScrollableList {
 
 
     @Override

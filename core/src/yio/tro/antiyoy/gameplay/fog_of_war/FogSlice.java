@@ -1,11 +1,10 @@
 package yio.tro.antiyoy.gameplay.fog_of_war;
 
-import yio.tro.antiyoy.gameplay.Hex;
 import yio.tro.antiyoy.stuff.object_pool.ReusableYio;
 
 import java.util.ArrayList;
 
-public class FogSlice implements ReusableYio{
+public class FogSlice implements ReusableYio {
 
 
     public FogPoint topPoint, bottomPoint;

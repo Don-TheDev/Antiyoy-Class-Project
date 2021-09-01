@@ -604,7 +604,7 @@ public class SelectionManager {
     private boolean canBuildOnHex(Hex focusedHex, int tipType) {
         if (tipType == SelectionTipType.STRONG_TOWER) { // strong tower
             return focusedHex.selected && (!focusedHex.containsBuilding() || focusedHex.objectInside == Obj.TOWER);
-        } else if(tipType > 7){
+        } else if (tipType > 7) {
             return true;
         }
         return focusedHex.selected && !focusedHex.containsBuilding();

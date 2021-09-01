@@ -257,7 +257,7 @@ public abstract class ArtificialIntelligence {
     }
 
 
-    private  int getBuildLimitForProvince(Province province) {
+    private int getBuildLimitForProvince(Province province) {
         int bottom = Math.max(3, province.hexList.size() / 4);
         return Math.min(bottom, 10);
     }

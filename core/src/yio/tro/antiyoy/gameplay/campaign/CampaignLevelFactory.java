@@ -12,7 +12,6 @@ import yio.tro.antiyoy.gameplay.rules.GameRules;
 import yio.tro.antiyoy.menu.MenuControllerYio;
 import yio.tro.antiyoy.menu.color_picking.ColorHolderElement;
 import yio.tro.antiyoy.menu.scenes.Scenes;
-import yio.tro.antiyoy.menu.slider.SliderYio;
 import yio.tro.antiyoy.stuff.LanguagesManager;
 
 import java.util.ArrayList;

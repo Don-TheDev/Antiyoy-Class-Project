@@ -2,7 +2,7 @@ package yio.tro.antiyoy.menu.render;
 
 import yio.tro.antiyoy.menu.InterfaceElement;
 
-public class RenderNothing extends MenuRender{
+public class RenderNothing extends MenuRender {
 
     @Override
     public void loadTextures() {

@@ -7,7 +7,7 @@ import yio.tro.antiyoy.menu.render.MenuRender;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.RenderableTextYio;
 
-public class RenderLoadingScreenElement extends MenuRender{
+public class RenderLoadingScreenElement extends MenuRender {
 
 
     private LoadingScreenElement loadingScreenElement;

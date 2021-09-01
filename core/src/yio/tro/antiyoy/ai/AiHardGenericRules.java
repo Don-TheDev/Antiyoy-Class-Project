@@ -4,7 +4,7 @@ import yio.tro.antiyoy.gameplay.GameController;
 import yio.tro.antiyoy.gameplay.Hex;
 import yio.tro.antiyoy.gameplay.Province;
 
-public class AiHardGenericRules extends ArtificialIntelligenceGeneric{
+public class AiHardGenericRules extends ArtificialIntelligenceGeneric {
 
 
     public AiHardGenericRules(GameController gameController, int fraction) {
@@ -15,9 +15,7 @@ public class AiHardGenericRules extends ArtificialIntelligenceGeneric{
     @Override
     public void makeMove() {
         moveUnits();
-
         spendMoneyAndMergeUnits();
-
         moveAfkUnits();
     }
 

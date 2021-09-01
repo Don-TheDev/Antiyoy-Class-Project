@@ -11,7 +11,7 @@ import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.LanguagesManager;
 import yio.tro.antiyoy.stuff.RenderableTextYio;
 
-public class ProfitDetailItem extends AbstractCustomListItem{
+public class ProfitDetailItem extends AbstractCustomListItem {
 
     public IncomeType incomeType;
     public RenderableTextYio title;

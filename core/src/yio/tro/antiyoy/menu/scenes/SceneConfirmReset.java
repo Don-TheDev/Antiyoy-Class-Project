@@ -5,7 +5,7 @@ import yio.tro.antiyoy.menu.ButtonYio;
 import yio.tro.antiyoy.menu.MenuControllerYio;
 import yio.tro.antiyoy.menu.behaviors.Reaction;
 
-public class SceneConfirmReset extends AbstractScene{
+public class SceneConfirmReset extends AbstractScene {
 
 
     private ButtonYio basePanel;

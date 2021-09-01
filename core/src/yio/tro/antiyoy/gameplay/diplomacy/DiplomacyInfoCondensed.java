@@ -3,7 +3,6 @@ package yio.tro.antiyoy.gameplay.diplomacy;
 import yio.tro.antiyoy.stuff.object_pool.ReusableYio;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class DiplomacyInfoCondensed implements ReusableYio {
 

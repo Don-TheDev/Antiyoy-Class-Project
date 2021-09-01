@@ -5,7 +5,7 @@ import yio.tro.antiyoy.gameplay.Hex;
 import yio.tro.antiyoy.gameplay.Obj;
 import yio.tro.antiyoy.gameplay.Province;
 
-public abstract class ArtificialIntelligenceGeneric extends ArtificialIntelligence{
+public abstract class ArtificialIntelligenceGeneric extends ArtificialIntelligence {
 
 
     public static final int MAX_EXTRA_FARM_COST = 80;

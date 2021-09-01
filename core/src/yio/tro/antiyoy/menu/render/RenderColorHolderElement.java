@@ -9,7 +9,7 @@ import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.RectangleYio;
 import yio.tro.antiyoy.stuff.RenderableTextYio;
 
-public class RenderColorHolderElement extends MenuRender{
+public class RenderColorHolderElement extends MenuRender {
 
 
     private ColorHolderElement colorHolderElement;

@@ -2,7 +2,7 @@ package yio.tro.antiyoy.gameplay.tests;
 
 import yio.tro.antiyoy.menu.scenes.Scenes;
 
-public class TestLaunchFireworks extends AbstractTest{
+public class TestLaunchFireworks extends AbstractTest {
 
     @Override
     public String getName() {

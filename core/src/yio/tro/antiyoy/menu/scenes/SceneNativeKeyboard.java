@@ -5,7 +5,7 @@ import yio.tro.antiyoy.menu.keyboard.AbstractKbReaction;
 import yio.tro.antiyoy.menu.keyboard.NativeKeyboardElement;
 import yio.tro.antiyoy.menu.scenes.gameplay.AbstractModalScene;
 
-public class SceneNativeKeyboard extends AbstractModalScene{
+public class SceneNativeKeyboard extends AbstractModalScene {
 
     public NativeKeyboardElement nativeKeyboardElement;
 

@@ -14,7 +14,7 @@ import yio.tro.antiyoy.stuff.RectangleYio;
 
 import java.util.ArrayList;
 
-public class ColorPickerElement extends InterfaceElement{
+public class ColorPickerElement extends InterfaceElement {
 
     MenuControllerYio menuControllerYio;
     public FactorYio appearFactor;

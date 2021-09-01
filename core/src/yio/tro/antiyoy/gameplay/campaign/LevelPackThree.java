@@ -1,6 +1,6 @@
 package yio.tro.antiyoy.gameplay.campaign;
 
-public class LevelPackThree extends AbstractLevelPack{
+public class LevelPackThree extends AbstractLevelPack {
 
     public LevelPackThree(CampaignLevelFactory campaignLevelFactory) {
         super(campaignLevelFactory);

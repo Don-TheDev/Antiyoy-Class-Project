@@ -6,7 +6,7 @@ import yio.tro.antiyoy.menu.editor_elements.edit_land.EditLandElement;
 import yio.tro.antiyoy.menu.editor_elements.edit_land.EleItem;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderEditLandElement extends MenuRender{
+public class RenderEditLandElement extends MenuRender {
 
 
     private EditLandElement editLandElement;

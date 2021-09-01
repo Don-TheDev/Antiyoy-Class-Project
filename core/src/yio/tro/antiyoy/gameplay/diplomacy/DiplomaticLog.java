@@ -102,7 +102,8 @@ public class DiplomaticLog {
 
 
     private void applyHexSale(DiplomaticMessage message) {
-        int price;ArrayList<Hex> hexList = diplomacyManager.convertStringToPurchaseList(message.arg1);
+        int price;
+        ArrayList<Hex> hexList = diplomacyManager.convertStringToPurchaseList(message.arg1);
         price = Integer.valueOf(message.arg2);
         Scenes.sceneAgreeToBuyHexes.create();
         Scenes.sceneAgreeToBuyHexes.dialog.setData(message.recipient, hexList, price);
@@ -110,7 +111,8 @@ public class DiplomaticLog {
 
 
     private void applyHexPurchase(DiplomaticMessage message) {
-        int price;ArrayList<Hex> hexesToBuy = diplomacyManager.convertStringToPurchaseList(message.arg1);
+        int price;
+        ArrayList<Hex> hexesToBuy = diplomacyManager.convertStringToPurchaseList(message.arg1);
         price = Integer.valueOf(message.arg2);
         Scenes.sceneAgreeToSellHexes.create();
         Scenes.sceneAgreeToSellHexes.dialog.setData(message.sender, hexesToBuy, price);
@@ -147,7 +149,8 @@ public class DiplomaticLog {
     void checkToRemoveInvalidHexSaleMessages() {
         for (int i = messages.size() - 1; i >= 0; i--) {
             DiplomaticMessage diplomaticMessage = messages.get(i);
-            if (diplomaticMessage.isNot(DipMessageType.hex_purchase) && diplomaticMessage.isNot(DipMessageType.hex_sale)) continue;
+            if (diplomaticMessage.isNot(DipMessageType.hex_purchase) && diplomaticMessage.isNot(DipMessageType.hex_sale))
+                continue;
             if (!diplomaticMessage.containsLandOwnedByThirdParty()) continue;
 
             removeMessage(diplomaticMessage);

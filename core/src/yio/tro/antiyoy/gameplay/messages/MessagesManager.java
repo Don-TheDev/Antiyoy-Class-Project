@@ -8,7 +8,7 @@ import yio.tro.antiyoy.stuff.RepeatYio;
 
 import java.util.ArrayList;
 
-public class MessagesManager implements EncodeableYio{
+public class MessagesManager implements EncodeableYio {
 
     GameController gameController;
     public ArrayList<PreparedMessage> messages;

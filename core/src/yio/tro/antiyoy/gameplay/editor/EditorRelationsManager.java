@@ -12,7 +12,7 @@ import yio.tro.antiyoy.menu.scenes.Scenes;
 
 import java.util.ArrayList;
 
-public class EditorRelationsManager implements EncodeableYio{
+public class EditorRelationsManager implements EncodeableYio {
 
     LevelEditor levelEditor;
     public ArrayList<EditorRelation> relations;

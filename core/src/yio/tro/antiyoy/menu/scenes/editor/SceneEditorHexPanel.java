@@ -6,7 +6,7 @@ import yio.tro.antiyoy.menu.MenuControllerYio;
 import yio.tro.antiyoy.menu.behaviors.Reaction;
 import yio.tro.antiyoy.menu.editor_elements.edit_land.EditLandElement;
 
-public class SceneEditorHexPanel extends AbstractEditorPanel{
+public class SceneEditorHexPanel extends AbstractEditorPanel {
 
 
     private ButtonYio basePanel;

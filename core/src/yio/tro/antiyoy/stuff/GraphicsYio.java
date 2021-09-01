@@ -86,7 +86,7 @@ public class GraphicsYio {
 
 
     public static void drawByRectangle(Batch batch, TextureRegion textureRegion, RectangleYio rectangleYio) {
-        batch.draw(textureRegion, (float)rectangleYio.x, (float)rectangleYio.y, (float)rectangleYio.width, (float)rectangleYio.height);
+        batch.draw(textureRegion, (float) rectangleYio.x, (float) rectangleYio.y, (float) rectangleYio.width, (float) rectangleYio.height);
     }
 
 

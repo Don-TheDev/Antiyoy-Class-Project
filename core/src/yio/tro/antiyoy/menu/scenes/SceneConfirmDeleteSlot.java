@@ -5,7 +5,7 @@ import yio.tro.antiyoy.menu.ButtonYio;
 import yio.tro.antiyoy.menu.MenuControllerYio;
 import yio.tro.antiyoy.menu.behaviors.Reaction;
 
-public class SceneConfirmDeleteSlot extends AbstractScene{
+public class SceneConfirmDeleteSlot extends AbstractScene {
 
 
     private ButtonYio yesButton;

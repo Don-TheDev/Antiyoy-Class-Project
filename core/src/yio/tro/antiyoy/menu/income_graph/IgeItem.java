@@ -1,11 +1,13 @@
 package yio.tro.antiyoy.menu.income_graph;
 
 import yio.tro.antiyoy.factor_yio.FactorYio;
-import yio.tro.antiyoy.gameplay.rules.GameRules;
-import yio.tro.antiyoy.stuff.*;
+import yio.tro.antiyoy.stuff.GraphicsYio;
+import yio.tro.antiyoy.stuff.PointYio;
+import yio.tro.antiyoy.stuff.RectangleYio;
+import yio.tro.antiyoy.stuff.RenderableTextYio;
 import yio.tro.antiyoy.stuff.object_pool.ReusableYio;
 
-public class IgeItem implements ReusableYio{
+public class IgeItem implements ReusableYio {
 
     IncomeGraphElement incomeGraphElement;
     public RectangleYio viewPosition;

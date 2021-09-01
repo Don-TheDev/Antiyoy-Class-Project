@@ -8,7 +8,7 @@ import yio.tro.antiyoy.menu.MenuControllerYio;
 import yio.tro.antiyoy.menu.behaviors.Reaction;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class SceneMatchStatistics extends AbstractScene{
+public class SceneMatchStatistics extends AbstractScene {
 
 
     private ButtonYio replayButton;

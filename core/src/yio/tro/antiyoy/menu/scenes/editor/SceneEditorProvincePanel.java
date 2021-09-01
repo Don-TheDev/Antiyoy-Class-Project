@@ -13,7 +13,7 @@ import yio.tro.antiyoy.menu.slider.SliderBehavior;
 import yio.tro.antiyoy.menu.slider.SliderYio;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class SceneEditorProvincePanel extends AbstractModalScene{
+public class SceneEditorProvincePanel extends AbstractModalScene {
 
 
     public static final int NAME_LIMIT = 15;

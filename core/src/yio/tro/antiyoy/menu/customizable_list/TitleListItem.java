@@ -6,7 +6,7 @@ import yio.tro.antiyoy.menu.render.MenuRender;
 import yio.tro.antiyoy.stuff.Fonts;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class TitleListItem extends AbstractSingleLineItem{
+public class TitleListItem extends AbstractSingleLineItem {
 
     @Override
     protected BitmapFont getTitleFont() {

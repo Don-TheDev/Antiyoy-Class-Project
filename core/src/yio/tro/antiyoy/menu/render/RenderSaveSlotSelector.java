@@ -10,7 +10,7 @@ import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.Masking;
 import yio.tro.antiyoy.stuff.RectangleYio;
 
-public class RenderSaveSlotSelector extends MenuRender{
+public class RenderSaveSlotSelector extends MenuRender {
 
     private TextureRegion backgroundTexture;
     private TextureRegion selectionPixel;
@@ -157,10 +157,14 @@ public class RenderSaveSlotSelector extends MenuRender{
 
     private TextureRegion getItemBackgroundTexture(SsItem item) {
         switch (item.bckViewType) {
-            default: return null;
-            case 0: return bck1;
-            case 1: return bck2;
-            case 2: return bck3;
+            default:
+                return null;
+            case 0:
+                return bck1;
+            case 1:
+                return bck2;
+            case 2:
+                return bck3;
         }
     }
 

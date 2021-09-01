@@ -2,10 +2,8 @@ package yio.tro.antiyoy.menu.render;
 
 import yio.tro.antiyoy.menu.customizable_list.AbstractCustomListItem;
 import yio.tro.antiyoy.menu.customizable_list.AbstractSingleLineItem;
-import yio.tro.antiyoy.stuff.GraphicsYio;
-import yio.tro.antiyoy.stuff.RenderableTextYio;
 
-public class RenderSingleListItem extends AbstractRenderCustomListItem{
+public class RenderSingleListItem extends AbstractRenderCustomListItem {
 
     private AbstractSingleLineItem slItem;
     private float alpha;

@@ -3,7 +3,7 @@ package yio.tro.antiyoy.menu.scenes;
 import yio.tro.antiyoy.menu.*;
 import yio.tro.antiyoy.menu.behaviors.Reaction;
 
-public class SceneCampaignMenu extends AbstractScene{
+public class SceneCampaignMenu extends AbstractScene {
 
     boolean updatedSelectorMetrics;
     LevelSelector levelSelector;

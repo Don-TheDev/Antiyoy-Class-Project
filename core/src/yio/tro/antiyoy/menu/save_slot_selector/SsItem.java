@@ -6,7 +6,7 @@ import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.PointYio;
 import yio.tro.antiyoy.stuff.RectangleYio;
 
-public class SsItem implements LiEditable{
+public class SsItem implements LiEditable {
 
 
     SaveSlotSelector saveSlotSelector;

@@ -4,7 +4,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import yio.tro.antiyoy.gameplay.highlight.HighlightItem;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderHighlights extends GameRender{
+public class RenderHighlights extends GameRender {
 
     private TextureRegion borderTexture;
 

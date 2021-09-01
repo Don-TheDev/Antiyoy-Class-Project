@@ -7,7 +7,7 @@ import yio.tro.antiyoy.gameplay.rules.GameRules;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.PointYio;
 
-public class RenderForefinger extends GameRender{
+public class RenderForefinger extends GameRender {
 
 
     private PointYio pos;

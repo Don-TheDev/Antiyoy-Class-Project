@@ -8,7 +8,7 @@ import yio.tro.antiyoy.menu.behaviors.Reaction;
 
 import java.util.ArrayList;
 
-public class SceneArticle extends AbstractScene{
+public class SceneArticle extends AbstractScene {
 
 
     private ButtonYio infoPanel;

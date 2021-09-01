@@ -7,7 +7,7 @@ import yio.tro.antiyoy.gameplay.Province;
 
 import java.util.ArrayList;
 
-public class RaUnitBuilt extends RepAction{
+public class RaUnitBuilt extends RepAction {
 
     Hex src, dst;
     int strength;

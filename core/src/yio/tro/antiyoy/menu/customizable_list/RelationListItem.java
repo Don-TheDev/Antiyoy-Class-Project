@@ -5,7 +5,7 @@ import yio.tro.antiyoy.menu.render.AbstractRenderCustomListItem;
 import yio.tro.antiyoy.menu.render.MenuRender;
 import yio.tro.antiyoy.stuff.*;
 
-public class RelationListItem extends AbstractCustomListItem{
+public class RelationListItem extends AbstractCustomListItem {
 
     public RenderableTextYio nameOne;
     public RenderableTextYio nameTwo;

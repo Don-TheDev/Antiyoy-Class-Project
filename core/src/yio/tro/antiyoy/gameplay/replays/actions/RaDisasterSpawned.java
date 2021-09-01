@@ -7,7 +7,7 @@ import yio.tro.antiyoy.gameplay.Obj;
 
 import java.util.ArrayList;
 
-public class RaDisasterSpawned extends RepAction{
+public class RaDisasterSpawned extends RepAction {
     //TODO just copied tree classes
 
     Hex hex;

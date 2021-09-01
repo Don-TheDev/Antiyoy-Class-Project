@@ -7,7 +7,7 @@ import yio.tro.antiyoy.menu.scrollable_list.ListBehaviorYio;
 import yio.tro.antiyoy.menu.scrollable_list.ListItemYio;
 import yio.tro.antiyoy.menu.scrollable_list.ScrollableListYio;
 
-public class SceneTestScrollableList extends AbstractScene{
+public class SceneTestScrollableList extends AbstractScene {
 
     private ButtonYio backButton;
     public ScrollableListYio scrollableListYio;

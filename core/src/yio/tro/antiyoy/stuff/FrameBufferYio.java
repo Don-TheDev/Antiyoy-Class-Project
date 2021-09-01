@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.glutils.FrameBuffer;
 
 
-public class FrameBufferYio extends FrameBuffer{
+public class FrameBufferYio extends FrameBuffer {
 
     public float f;
 

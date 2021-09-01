@@ -3,7 +3,7 @@ package yio.tro.antiyoy.stuff;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import yio.tro.antiyoy.stuff.object_pool.ReusableYio;
 
-public class RenderableTextYio implements ReusableYio{
+public class RenderableTextYio implements ReusableYio {
 
 
     public BitmapFont font;

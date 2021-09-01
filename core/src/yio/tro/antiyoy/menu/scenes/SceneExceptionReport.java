@@ -12,7 +12,7 @@ import yio.tro.antiyoy.menu.MenuControllerYio;
 
 import java.util.ArrayList;
 
-public class SceneExceptionReport extends AbstractScene{
+public class SceneExceptionReport extends AbstractScene {
 
 
     public SceneExceptionReport(MenuControllerYio menuControllerYio) {

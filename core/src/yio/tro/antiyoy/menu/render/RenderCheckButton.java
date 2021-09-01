@@ -2,15 +2,13 @@ package yio.tro.antiyoy.menu.render;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import yio.tro.antiyoy.menu.CheckButtonYio;
 import yio.tro.antiyoy.menu.InterfaceElement;
 import yio.tro.antiyoy.stuff.GraphicsYio;
-import yio.tro.antiyoy.stuff.Masking;
 import yio.tro.antiyoy.stuff.RectangleYio;
 import yio.tro.antiyoy.stuff.RenderableTextYio;
 
-public class RenderCheckButton extends MenuRender{
+public class RenderCheckButton extends MenuRender {
 
 
     private TextureRegion blackPixel;

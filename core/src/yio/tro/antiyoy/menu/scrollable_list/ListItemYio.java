@@ -6,7 +6,7 @@ import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.PointYio;
 import yio.tro.antiyoy.stuff.RectangleYio;
 
-public class ListItemYio implements LiEditable{
+public class ListItemYio implements LiEditable {
 
 
     ScrollableListYio scrollableListYio;

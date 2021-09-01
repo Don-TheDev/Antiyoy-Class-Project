@@ -4,7 +4,7 @@ import yio.tro.antiyoy.gameplay.*;
 
 import java.util.ArrayList;
 
-public class RaUnitMoved extends RepAction{
+public class RaUnitMoved extends RepAction {
 
     Hex src, dst;
 

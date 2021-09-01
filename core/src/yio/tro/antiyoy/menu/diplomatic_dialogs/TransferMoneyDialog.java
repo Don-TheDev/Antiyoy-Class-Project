@@ -7,7 +7,7 @@ import yio.tro.antiyoy.menu.scenes.Scenes;
 import yio.tro.antiyoy.stuff.Fonts;
 import yio.tro.antiyoy.stuff.LanguagesManager;
 
-public class TransferMoneyDialog extends AbstractDiplomaticDialog{
+public class TransferMoneyDialog extends AbstractDiplomaticDialog {
 
     DiplomaticEntity sender, recipient;
 

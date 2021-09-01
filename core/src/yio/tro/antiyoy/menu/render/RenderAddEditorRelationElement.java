@@ -8,7 +8,7 @@ import yio.tro.antiyoy.menu.editor_elements.add_relation.AddEditorRelationElemen
 import yio.tro.antiyoy.menu.editor_elements.add_relation.AerItem;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderAddEditorRelationElement extends MenuRender{
+public class RenderAddEditorRelationElement extends MenuRender {
 
 
     private AddEditorRelationElement addEditorRelationElement;

@@ -3,7 +3,7 @@ package yio.tro.antiyoy.menu.scenes.editor;
 import yio.tro.antiyoy.gameplay.rules.GameRules;
 import yio.tro.antiyoy.menu.*;
 
-public class SceneEditorGameRulesPanel extends AbstractEditorPanel{
+public class SceneEditorGameRulesPanel extends AbstractEditorPanel {
 
     private ButtonYio basePanel;
     private double bottom;

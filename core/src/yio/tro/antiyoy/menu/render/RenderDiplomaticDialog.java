@@ -11,7 +11,7 @@ import yio.tro.antiyoy.menu.diplomatic_dialogs.AcLabel;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.RenderableTextYio;
 
-public class RenderDiplomaticDialog extends MenuRender{
+public class RenderDiplomaticDialog extends MenuRender {
 
     private TextureRegion backgroundTexture;
     private TextureRegion selectionPixel;
@@ -117,9 +117,12 @@ public class RenderDiplomaticDialog extends MenuRender{
 
     private TextureRegion getButtonBackground(AcButton button) {
         switch (button.actionType) {
-            default: return customBckTexture;
-            case yes: return yesBckTexture;
-            case no: return noBckTexture;
+            default:
+                return customBckTexture;
+            case yes:
+                return yesBckTexture;
+            case no:
+                return noBckTexture;
         }
     }
 

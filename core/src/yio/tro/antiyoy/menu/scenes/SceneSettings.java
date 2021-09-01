@@ -8,7 +8,7 @@ import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.YioGdxGame;
 import yio.tro.antiyoy.menu.behaviors.Reaction;
 
-public class SceneSettings extends AbstractScene{
+public class SceneSettings extends AbstractScene {
 
 
     private double labelHeight;

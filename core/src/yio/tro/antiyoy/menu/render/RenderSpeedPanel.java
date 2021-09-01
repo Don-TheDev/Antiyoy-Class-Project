@@ -9,7 +9,7 @@ import yio.tro.antiyoy.menu.speed_panel.SpeedPanel;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.RectangleYio;
 
-public class RenderSpeedPanel extends MenuRender{
+public class RenderSpeedPanel extends MenuRender {
 
     private TextureRegion backgroundTexture;
     private TextureRegion playIcon;

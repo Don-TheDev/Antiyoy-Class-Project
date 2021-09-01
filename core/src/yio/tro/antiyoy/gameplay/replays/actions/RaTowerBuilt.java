@@ -7,7 +7,7 @@ import yio.tro.antiyoy.gameplay.Obj;
 
 import java.util.ArrayList;
 
-public class RaTowerBuilt extends RepAction{
+public class RaTowerBuilt extends RepAction {
 
     Hex hex;
     boolean strong;

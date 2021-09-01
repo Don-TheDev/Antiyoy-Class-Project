@@ -6,7 +6,7 @@ import yio.tro.antiyoy.menu.ButtonYio;
 import yio.tro.antiyoy.menu.MenuControllerYio;
 import yio.tro.antiyoy.menu.behaviors.editor.EditorReactions;
 
-public class SceneEditorObjectPanel extends AbstractEditorPanel{
+public class SceneEditorObjectPanel extends AbstractEditorPanel {
 
 
     private ButtonYio basePanel;

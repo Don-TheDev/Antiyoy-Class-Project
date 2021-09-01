@@ -6,7 +6,7 @@ import yio.tro.antiyoy.menu.render.MenuRender;
 import yio.tro.antiyoy.stuff.Fonts;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class ScrollListItem extends AbstractSingleLineItem{
+public class ScrollListItem extends AbstractSingleLineItem {
 
     SliReaction clickReaction;
     SliReaction longTapReaction;

@@ -12,7 +12,7 @@ import yio.tro.antiyoy.stuff.Masking;
 import yio.tro.antiyoy.stuff.RectangleYio;
 import yio.tro.antiyoy.stuff.RenderableTextYio;
 
-public class RenderScrollableList extends MenuRender{
+public class RenderScrollableList extends MenuRender {
 
     protected TextureRegion backgroundTexture;
     private TextureRegion selectionPixel;
@@ -172,10 +172,14 @@ public class RenderScrollableList extends MenuRender{
 
     protected TextureRegion getItemBackgroundTexture(ListItemYio item) {
         switch (item.bckViewType) {
-            default: return null;
-            case 0: return bck1;
-            case 1: return bck2;
-            case 2: return bck3;
+            default:
+                return null;
+            case 0:
+                return bck1;
+            case 1:
+                return bck2;
+            case 2:
+                return bck3;
         }
     }
 

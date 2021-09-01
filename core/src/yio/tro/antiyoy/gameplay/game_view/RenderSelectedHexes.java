@@ -3,7 +3,7 @@ package yio.tro.antiyoy.gameplay.game_view;
 import yio.tro.antiyoy.gameplay.Hex;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderSelectedHexes extends GameRender{
+public class RenderSelectedHexes extends GameRender {
 
     public RenderSelectedHexes(GameRendersList gameRendersList) {
         super(gameRendersList);

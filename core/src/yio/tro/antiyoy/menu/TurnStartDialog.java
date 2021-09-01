@@ -7,7 +7,7 @@ import yio.tro.antiyoy.gameplay.ColorsManager;
 import yio.tro.antiyoy.menu.render.MenuRender;
 import yio.tro.antiyoy.stuff.*;
 
-public class TurnStartDialog extends InterfaceElement{
+public class TurnStartDialog extends InterfaceElement {
 
     MenuControllerYio menuControllerYio;
     public RectangleYio position;
@@ -131,7 +131,7 @@ public class TurnStartDialog extends InterfaceElement{
     public float getVerticalTextViewDelta() {
         if (!circleModeEnabled) return 0;
 
-        return - (1 - appearFactor.get()) * 0.1f * GraphicsYio.width;
+        return -(1 - appearFactor.get()) * 0.1f * GraphicsYio.width;
     }
 
 

@@ -5,7 +5,7 @@ import yio.tro.antiyoy.menu.MenuControllerYio;
 import yio.tro.antiyoy.menu.behaviors.Reaction;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class SceneFireworks extends AbstractScene{
+public class SceneFireworks extends AbstractScene {
 
     FireworksElement fireworksElement;
 

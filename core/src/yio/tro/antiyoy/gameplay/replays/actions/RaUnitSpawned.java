@@ -4,7 +4,7 @@ import yio.tro.antiyoy.gameplay.FieldManager;
 import yio.tro.antiyoy.gameplay.GameController;
 import yio.tro.antiyoy.gameplay.Hex;
 
-public class RaUnitSpawned extends RepAction{
+public class RaUnitSpawned extends RepAction {
 
     Hex hex;
     int strength;

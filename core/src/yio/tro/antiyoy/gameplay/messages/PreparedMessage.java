@@ -2,7 +2,7 @@ package yio.tro.antiyoy.gameplay.messages;
 
 import yio.tro.antiyoy.gameplay.data_storage.EncodeableYio;
 
-public class PreparedMessage implements EncodeableYio{
+public class PreparedMessage implements EncodeableYio {
 
     MessagesManager messagesManager;
     public String value;

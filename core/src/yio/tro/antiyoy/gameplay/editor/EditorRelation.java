@@ -2,7 +2,7 @@ package yio.tro.antiyoy.gameplay.editor;
 
 import yio.tro.antiyoy.gameplay.data_storage.EncodeableYio;
 
-public class EditorRelation implements EncodeableYio{
+public class EditorRelation implements EncodeableYio {
 
     public int color1;
     public int color2;

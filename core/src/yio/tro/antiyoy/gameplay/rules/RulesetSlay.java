@@ -2,7 +2,7 @@ package yio.tro.antiyoy.gameplay.rules;
 
 import yio.tro.antiyoy.gameplay.*;
 
-public class RulesetSlay extends Ruleset{
+public class RulesetSlay extends Ruleset {
 
     public RulesetSlay(GameController gameController) {
         super(gameController);

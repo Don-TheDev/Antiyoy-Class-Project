@@ -6,7 +6,7 @@ import yio.tro.antiyoy.menu.editor_elements.color_picker.ColorPickerElement;
 import yio.tro.antiyoy.menu.editor_elements.color_picker.CpeItem;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderColorPickerElement extends MenuRender{
+public class RenderColorPickerElement extends MenuRender {
 
 
     private ColorPickerElement colorPickerElement;

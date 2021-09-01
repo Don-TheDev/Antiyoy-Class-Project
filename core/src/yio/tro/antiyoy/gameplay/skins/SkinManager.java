@@ -87,12 +87,15 @@ public class SkinManager {
     public String getEarthquakeTexturePath() {
         return "natural_disasters/Earthquake.png";
     }
+
     public String getAcidRainTexturePath() {
         return "natural_disasters/AcidRain.png";
     }
+
     public String getLocustSwarmTexturePath() {
         return "natural_disasters/LocustSwarm.png";
     }
+
     public String getSongOfNatureTexturePath() {
         return "natural_disasters/SongOfNature.png";
     }

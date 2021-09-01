@@ -7,7 +7,7 @@ import yio.tro.antiyoy.menu.behaviors.Reaction;
 
 import java.util.ArrayList;
 
-public class SceneSingleMessage extends AbstractScene{
+public class SceneSingleMessage extends AbstractScene {
 
     public SceneSingleMessage(MenuControllerYio menuControllerYio) {
         super(menuControllerYio);

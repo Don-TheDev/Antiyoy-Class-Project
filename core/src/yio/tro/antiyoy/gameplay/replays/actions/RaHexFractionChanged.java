@@ -6,7 +6,7 @@ import yio.tro.antiyoy.gameplay.Hex;
 
 import java.util.ArrayList;
 
-public class RaHexFractionChanged extends RepAction{
+public class RaHexFractionChanged extends RepAction {
 
     // should be used only when fraction changed without normal reason (cheats, for example)
     Hex hex;

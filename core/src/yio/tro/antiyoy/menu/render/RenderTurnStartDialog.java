@@ -6,14 +6,13 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
-import yio.tro.antiyoy.gameplay.GameController;
 import yio.tro.antiyoy.gameplay.rules.GameRules;
 import yio.tro.antiyoy.menu.InterfaceElement;
 import yio.tro.antiyoy.menu.TurnStartDialog;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.Masking;
 
-public class RenderTurnStartDialog extends MenuRender{
+public class RenderTurnStartDialog extends MenuRender {
 
     TurnStartDialog dialog;
     private TextureRegion bckColors[];

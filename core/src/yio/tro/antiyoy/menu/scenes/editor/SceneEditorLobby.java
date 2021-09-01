@@ -4,8 +4,6 @@ import yio.tro.antiyoy.gameplay.GameController;
 import yio.tro.antiyoy.gameplay.LevelSize;
 import yio.tro.antiyoy.gameplay.data_storage.ImportManager;
 import yio.tro.antiyoy.gameplay.editor.EditorSaveSystem;
-import yio.tro.antiyoy.gameplay.editor.LevelEditor;
-import yio.tro.antiyoy.gameplay.loading.LoadingType;
 import yio.tro.antiyoy.menu.Animation;
 import yio.tro.antiyoy.menu.ButtonYio;
 import yio.tro.antiyoy.menu.MenuControllerYio;
@@ -19,7 +17,7 @@ import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.LanguagesManager;
 import yio.tro.antiyoy.stuff.RectangleYio;
 
-public class SceneEditorLobby extends AbstractScene{
+public class SceneEditorLobby extends AbstractScene {
 
 
     private Reaction rbCreate;

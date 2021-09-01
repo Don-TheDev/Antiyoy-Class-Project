@@ -8,7 +8,7 @@ import yio.tro.antiyoy.menu.editor_elements.color_picker.IColorChoiceListener;
 import yio.tro.antiyoy.menu.scenes.gameplay.AbstractModalScene;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class SceneColorPicker extends AbstractModalScene{
+public class SceneColorPicker extends AbstractModalScene {
 
 
     private Reaction rbHide;

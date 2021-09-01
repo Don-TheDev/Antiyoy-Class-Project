@@ -3,7 +3,7 @@ package yio.tro.antiyoy.gameplay.touch_mode;
 import yio.tro.antiyoy.gameplay.GameController;
 import yio.tro.antiyoy.gameplay.editor.LevelEditor;
 
-public class TmEditor extends TouchMode{
+public class TmEditor extends TouchMode {
 
     public TmEditor(GameController gameController) {
         super(gameController);

@@ -2,7 +2,7 @@ package yio.tro.antiyoy.gameplay.diplomacy;
 
 import yio.tro.antiyoy.stuff.object_pool.ReusableYio;
 
-public class DiplomaticCooldown implements ReusableYio{
+public class DiplomaticCooldown implements ReusableYio {
 
     public static final int TYPE_STOP_WAR = 0;
     public DiplomaticEntity one, two;

@@ -1,10 +1,9 @@
 package yio.tro.antiyoy.gameplay.game_view;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import yio.tro.antiyoy.stuff.Fonts;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderSelectionShadows extends GameRender{
+public class RenderSelectionShadows extends GameRender {
 
 
     private float smFactor;

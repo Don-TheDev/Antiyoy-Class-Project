@@ -5,11 +5,10 @@ import yio.tro.antiyoy.gameplay.diplomacy.DiplomaticEntity;
 import yio.tro.antiyoy.menu.render.AbstractRenderCustomListItem;
 import yio.tro.antiyoy.menu.render.MenuRender;
 import yio.tro.antiyoy.menu.scenes.Scenes;
-import yio.tro.antiyoy.menu.scenes.gameplay.choose_entity.IDipEntityReceiver;
 import yio.tro.antiyoy.stuff.Fonts;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class SimpleDipEntityItem extends AbstractSingleLineItem{
+public class SimpleDipEntityItem extends AbstractSingleLineItem {
 
     public DiplomaticEntity diplomaticEntity;
     public int backgroundColor;

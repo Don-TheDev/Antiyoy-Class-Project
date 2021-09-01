@@ -5,7 +5,7 @@ import yio.tro.antiyoy.menu.render.MenuRender;
 import yio.tro.antiyoy.menu.scenes.Scenes;
 import yio.tro.antiyoy.stuff.*;
 
-public class SkinListItem extends AbstractCustomListItem{
+public class SkinListItem extends AbstractCustomListItem {
 
     public RenderableTextYio title;
     private int skinIndex;

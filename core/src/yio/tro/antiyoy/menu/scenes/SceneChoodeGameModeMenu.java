@@ -5,7 +5,7 @@ import yio.tro.antiyoy.menu.*;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.menu.behaviors.Reaction;
 
-public class SceneChoodeGameModeMenu extends AbstractScene{
+public class SceneChoodeGameModeMenu extends AbstractScene {
 
 
     public ButtonYio skirmishButton;

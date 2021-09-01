@@ -1,18 +1,19 @@
 package yio.tro.antiyoy.menu.scenes;
 
 import yio.tro.antiyoy.SettingsManager;
-import yio.tro.antiyoy.gameplay.skins.SkinType;
-import yio.tro.antiyoy.menu.*;
+import yio.tro.antiyoy.menu.Animation;
+import yio.tro.antiyoy.menu.ButtonYio;
+import yio.tro.antiyoy.menu.CheckButtonYio;
+import yio.tro.antiyoy.menu.MenuControllerYio;
+import yio.tro.antiyoy.menu.behaviors.Reaction;
 import yio.tro.antiyoy.menu.slider.SliderBehavior;
 import yio.tro.antiyoy.menu.slider.SliderYio;
 import yio.tro.antiyoy.stuff.GraphicsYio;
-import yio.tro.antiyoy.stuff.LanguagesManager;
-import yio.tro.antiyoy.menu.behaviors.Reaction;
 import yio.tro.antiyoy.stuff.RectangleYio;
 
 import java.util.ArrayList;
 
-public class SceneMoreSettings extends AbstractScene{
+public class SceneMoreSettings extends AbstractScene {
 
 
     private double panelHeight;

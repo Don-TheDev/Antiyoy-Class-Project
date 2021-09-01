@@ -58,7 +58,7 @@ public class GameSaver {
 
     private int getCurrentLevelIndexForSave() {
         if (!GameRules.campaignMode) {
-            return -1; 
+            return -1;
         }
 
         return CampaignProgressManager.getInstance().currentLevelIndex;

@@ -6,7 +6,7 @@ import yio.tro.antiyoy.gameplay.Hex;
 
 import java.util.ArrayList;
 
-public class RaUnitDiedFromStarvation extends RepAction{
+public class RaUnitDiedFromStarvation extends RepAction {
 
     Hex hex;
 

@@ -13,7 +13,7 @@ import yio.tro.antiyoy.stuff.LanguagesManager;
 
 import java.util.ArrayList;
 
-public class SceneLanguages extends AbstractScene{
+public class SceneLanguages extends AbstractScene {
 
     ScrollableListYio scrollableListYio;
     private ButtonYio backButton;

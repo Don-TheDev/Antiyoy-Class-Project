@@ -5,7 +5,7 @@ import yio.tro.antiyoy.menu.customizable_list.AbstractCustomListItem;
 import yio.tro.antiyoy.menu.customizable_list.SimpleDipEntityItem;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderSimpleDipEntityItem extends AbstractRenderCustomListItem{
+public class RenderSimpleDipEntityItem extends AbstractRenderCustomListItem {
 
 
     private SimpleDipEntityItem simpleDipEntityItem;

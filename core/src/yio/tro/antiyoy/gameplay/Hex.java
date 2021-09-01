@@ -18,7 +18,6 @@ public class Hex implements ReusableYio, EncodeableYio {
     public int fraction, previousFraction, objectInside;
     long animStartTime;
     boolean blockToTreeFromExpanding, canContainObjects;
-    boolean blockToDisasterFromExpanding;
     public FactorYio animFactor, selectionFactor;
     public Unit unit;
     public Hex algoLink;

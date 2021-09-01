@@ -7,7 +7,7 @@ import yio.tro.antiyoy.menu.behaviors.Reaction;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.LanguagesManager;
 
-public class SceneBleentoroRelease extends AbstractScene{
+public class SceneBleentoroRelease extends AbstractScene {
 
     ButtonYio panel, okButton;
 

@@ -1,15 +1,13 @@
 package yio.tro.antiyoy.menu.income_view;
 
 import yio.tro.antiyoy.SoundManagerYio;
-import yio.tro.antiyoy.gameplay.GameController;
-import yio.tro.antiyoy.gameplay.Province;
 import yio.tro.antiyoy.menu.AbstractRectangularUiElement;
 import yio.tro.antiyoy.menu.MenuControllerYio;
 import yio.tro.antiyoy.menu.behaviors.Reaction;
 import yio.tro.antiyoy.menu.render.MenuRender;
 import yio.tro.antiyoy.stuff.*;
 
-public class MoneyViewElement extends AbstractRectangularUiElement{
+public class MoneyViewElement extends AbstractRectangularUiElement {
 
     public RenderableTextYio title;
     public SelectionEngineYio selectionEngineYio;

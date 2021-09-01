@@ -49,7 +49,8 @@ public class TabsEngineYio {
         magnets = new ArrayList<>();
         leftMagnet = null;
         rightMagnet = null;
-        magnetMaxPower = 0.01 * GraphicsYio.width;;
+        magnetMaxPower = 0.01 * GraphicsYio.width;
+        ;
         magnetMaxDistance = 0;
 
         resetToBottom();

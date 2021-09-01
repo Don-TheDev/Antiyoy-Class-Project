@@ -136,7 +136,8 @@ public class SceneUserLevels extends AbstractScene {
         if (!diplomacyAllowed && userLevel.getDiplomacy()) return true;
         if (!fogOfWarAllowed && userLevel.getFogOfWar()) return true;
 
-        if (searchName.length() > 0 && !userLevel.getMapName().toLowerCase().contains(searchName.toLowerCase())) return true;
+        if (searchName.length() > 0 && !userLevel.getMapName().toLowerCase().contains(searchName.toLowerCase()))
+            return true;
 
         return false;
     }

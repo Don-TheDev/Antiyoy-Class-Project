@@ -510,8 +510,8 @@ public class YioGdxGame extends ApplicationAdapter implements InputProcessor {
             animX = buttonYio.cx;
             animY = buttonYio.cy;
         } else {
-            animX = w/2;
-            animY = h/2;
+            animX = w / 2;
+            animY = h / 2;
         }
         transitionFactor.setValues(0.15, 0);
     }
@@ -746,8 +746,7 @@ public class YioGdxGame extends ApplicationAdapter implements InputProcessor {
     }
 
     @Override
-    public boolean scrolled(float amountX, float amountY)
-    {
+    public boolean scrolled(float amountX, float amountY) {
         if (menuControllerYio.onMouseWheelScrolled((int) amountY)) return true; // UI can catch mouse scroll
 
         if (gameView.appearFactor.get() > 0.1) {

@@ -6,7 +6,7 @@ import yio.tro.antiyoy.gameplay.ClickDetector;
 import yio.tro.antiyoy.menu.render.MenuRender;
 import yio.tro.antiyoy.stuff.*;
 
-public class CheckButtonYio extends InterfaceElement{
+public class CheckButtonYio extends InterfaceElement {
 
     public MenuControllerYio menuControllerYio;
     public RectangleYio viewPosition;

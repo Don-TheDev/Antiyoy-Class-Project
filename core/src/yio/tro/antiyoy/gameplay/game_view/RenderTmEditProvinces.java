@@ -6,7 +6,7 @@ import yio.tro.antiyoy.gameplay.touch_mode.TouchMode;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.RenderableTextYio;
 
-public class RenderTmEditProvinces extends GameRender{
+public class RenderTmEditProvinces extends GameRender {
 
 
     private TmEditProvinces tm;

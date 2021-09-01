@@ -2,7 +2,7 @@ package yio.tro.antiyoy.stuff;
 
 import yio.tro.antiyoy.stuff.object_pool.ReusableYio;
 
-public class CircleYio implements ReusableYio{
+public class CircleYio implements ReusableYio {
 
     public PointYio center;
     public float radius;

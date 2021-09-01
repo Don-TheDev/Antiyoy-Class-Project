@@ -2,7 +2,7 @@ package yio.tro.antiyoy.gameplay.touch_mode;
 
 import yio.tro.antiyoy.gameplay.GameController;
 
-public class TmIgnore extends TouchMode{
+public class TmIgnore extends TouchMode {
 
     public TmIgnore(GameController gameController) {
         super(gameController);

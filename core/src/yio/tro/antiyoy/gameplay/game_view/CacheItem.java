@@ -5,11 +5,10 @@ import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.graphics.glutils.FrameBuffer;
 import yio.tro.antiyoy.stuff.FrameBufferYio;
-import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.RectangleYio;
 import yio.tro.antiyoy.stuff.object_pool.ReusableYio;
 
-public class CacheItem implements ReusableYio{
+public class CacheItem implements ReusableYio {
 
     public TextureRegion textureRegion;
     public RectangleYio position;

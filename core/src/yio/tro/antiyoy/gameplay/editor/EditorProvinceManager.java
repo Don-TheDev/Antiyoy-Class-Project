@@ -11,7 +11,7 @@ import yio.tro.antiyoy.stuff.object_pool.ObjectPoolYio;
 
 import java.util.ArrayList;
 
-public class EditorProvinceManager implements EncodeableYio{
+public class EditorProvinceManager implements EncodeableYio {
 
     LevelEditor levelEditor;
     public ArrayList<EditorProvinceData> provincesList;

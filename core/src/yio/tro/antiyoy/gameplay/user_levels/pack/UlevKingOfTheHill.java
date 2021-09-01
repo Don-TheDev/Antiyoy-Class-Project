@@ -2,7 +2,7 @@ package yio.tro.antiyoy.gameplay.user_levels.pack;
 
 import yio.tro.antiyoy.gameplay.user_levels.AbstractUserLevel;
 
-public class UlevKingOfTheHill extends AbstractUserLevel{
+public class UlevKingOfTheHill extends AbstractUserLevel {
 
     @Override
     public String getLevelCode() {

@@ -13,7 +13,7 @@ import yio.tro.antiyoy.menu.keyboard.AbstractKbReaction;
 import yio.tro.antiyoy.stuff.Fonts;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class SceneCityNames extends AbstractScene{
+public class SceneCityNames extends AbstractScene {
 
 
     private Reaction rbBack;

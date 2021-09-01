@@ -1,9 +1,6 @@
 package yio.tro.antiyoy.gameplay.user_levels;
 
-import yio.tro.antiyoy.gameplay.GameController;
-import yio.tro.antiyoy.gameplay.rules.GameRules;
-
-public abstract class AbstractUserLevel extends AbstractLegacyUserLevel{
+public abstract class AbstractUserLevel extends AbstractLegacyUserLevel {
 
 
     private String mapName;

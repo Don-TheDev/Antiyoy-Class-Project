@@ -10,7 +10,7 @@ import yio.tro.antiyoy.menu.editor_elements.add_relation.AddEditorRelationElemen
 import yio.tro.antiyoy.menu.scenes.Scenes;
 import yio.tro.antiyoy.menu.scenes.gameplay.AbstractModalScene;
 
-public class SceneEditorEditRelation extends AbstractModalScene{
+public class SceneEditorEditRelation extends AbstractModalScene {
 
 
     private Reaction rbHide;

@@ -9,7 +9,7 @@ import yio.tro.antiyoy.stuff.LanguagesManager;
 
 import java.util.ArrayList;
 
-public class SceneSpecialThanks extends AbstractScene{
+public class SceneSpecialThanks extends AbstractScene {
 
     SpecialThanksDialog dialog;
     ButtonYio backButton;

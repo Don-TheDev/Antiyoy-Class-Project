@@ -9,7 +9,7 @@ import yio.tro.antiyoy.menu.keyboard.KbTextArea;
 import yio.tro.antiyoy.menu.keyboard.BasicKeyboardElement;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderBasicKeyboardElement extends MenuRender{
+public class RenderBasicKeyboardElement extends MenuRender {
 
 
     private BasicKeyboardElement basicKeyboardElement;

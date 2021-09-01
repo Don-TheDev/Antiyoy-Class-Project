@@ -4,10 +4,9 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import yio.tro.antiyoy.menu.customizable_list.AbstractCustomListItem;
 import yio.tro.antiyoy.menu.customizable_list.ProfitDetailItem;
-import yio.tro.antiyoy.stuff.Fonts;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderProfitDetailItem extends AbstractRenderCustomListItem{
+public class RenderProfitDetailItem extends AbstractRenderCustomListItem {
 
 
     private ProfitDetailItem profitDetailItem;

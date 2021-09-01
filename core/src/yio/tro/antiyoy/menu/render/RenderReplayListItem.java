@@ -3,7 +3,7 @@ package yio.tro.antiyoy.menu.render;
 import yio.tro.antiyoy.menu.customizable_list.AbstractCustomListItem;
 import yio.tro.antiyoy.menu.customizable_list.ReplayListItem;
 
-public class RenderReplayListItem extends AbstractRenderCustomListItem{
+public class RenderReplayListItem extends AbstractRenderCustomListItem {
 
 
     private ReplayListItem replayListItem;

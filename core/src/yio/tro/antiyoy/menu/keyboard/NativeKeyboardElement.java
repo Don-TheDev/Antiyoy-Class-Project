@@ -317,4 +317,5 @@ public class NativeKeyboardElement extends InterfaceElement {
     @Override
     public MenuRender getRenderSystem() {
         return MenuRender.renderNativeKeyboard;
-    }}
+    }
+}

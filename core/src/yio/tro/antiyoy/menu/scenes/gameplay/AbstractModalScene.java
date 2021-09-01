@@ -1,13 +1,12 @@
 package yio.tro.antiyoy.menu.scenes.gameplay;
 
 import yio.tro.antiyoy.menu.Animation;
-import yio.tro.antiyoy.menu.ButtonYio;
 import yio.tro.antiyoy.menu.InvisibleCloseElement;
 import yio.tro.antiyoy.menu.MenuControllerYio;
 import yio.tro.antiyoy.menu.behaviors.Reaction;
 import yio.tro.antiyoy.menu.scenes.AbstractScene;
 
-public abstract class AbstractModalScene extends AbstractScene{
+public abstract class AbstractModalScene extends AbstractScene {
 
     protected InvisibleCloseElement invisibleCloseElement;
 

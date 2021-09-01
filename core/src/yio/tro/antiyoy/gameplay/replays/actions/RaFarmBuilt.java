@@ -7,7 +7,7 @@ import yio.tro.antiyoy.gameplay.Obj;
 
 import java.util.ArrayList;
 
-public class RaFarmBuilt extends RepAction{
+public class RaFarmBuilt extends RepAction {
 
     Hex hex;
 

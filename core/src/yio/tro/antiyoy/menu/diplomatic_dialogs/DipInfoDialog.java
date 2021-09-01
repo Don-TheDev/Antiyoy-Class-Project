@@ -9,7 +9,7 @@ import yio.tro.antiyoy.menu.MenuControllerYio;
 import yio.tro.antiyoy.stuff.Fonts;
 import yio.tro.antiyoy.stuff.LanguagesManager;
 
-public class DipInfoDialog extends AbstractDiplomaticDialog{
+public class DipInfoDialog extends AbstractDiplomaticDialog {
 
     DiplomaticEntity selectedEntity;
     DiplomaticEntity mainEntity;

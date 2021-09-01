@@ -92,6 +92,7 @@ public class MoveZoneManager {
     public void detectAndShowMoveZoneForBuildingUnit(int strength) {
         detectAndShowMoveZone(fieldManager.selectedHexes.get(0), strength);
     }
+
     public void detectAndShowMoveZoneForDisasters(int type) {
         detectAndShowMoveZone(fieldManager.selectedHexes.get(0), type);
     }

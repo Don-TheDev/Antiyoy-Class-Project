@@ -10,7 +10,7 @@ import yio.tro.antiyoy.menu.slider.SliderYio;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.RectangleYio;
 
-public class SceneDebugTests extends AbstractScene{
+public class SceneDebugTests extends AbstractScene {
 
 
     private double curY;

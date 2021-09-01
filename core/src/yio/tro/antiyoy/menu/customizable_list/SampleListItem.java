@@ -5,9 +5,8 @@ import yio.tro.antiyoy.menu.render.AbstractRenderCustomListItem;
 import yio.tro.antiyoy.menu.render.MenuRender;
 import yio.tro.antiyoy.stuff.Fonts;
 import yio.tro.antiyoy.stuff.GraphicsYio;
-import yio.tro.antiyoy.stuff.RenderableTextYio;
 
-public class SampleListItem extends AbstractSingleLineItem{
+public class SampleListItem extends AbstractSingleLineItem {
 
 
     @Override

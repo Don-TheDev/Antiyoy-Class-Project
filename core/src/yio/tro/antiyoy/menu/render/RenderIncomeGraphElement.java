@@ -7,10 +7,9 @@ import yio.tro.antiyoy.gameplay.skins.SkinManager;
 import yio.tro.antiyoy.menu.InterfaceElement;
 import yio.tro.antiyoy.menu.income_graph.IgeItem;
 import yio.tro.antiyoy.menu.income_graph.IncomeGraphElement;
-import yio.tro.antiyoy.stuff.Fonts;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderIncomeGraphElement extends MenuRender{
+public class RenderIncomeGraphElement extends MenuRender {
 
 
     private TextureRegion backgroundTexture;

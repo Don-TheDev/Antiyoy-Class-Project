@@ -4,7 +4,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import yio.tro.antiyoy.gameplay.Unit;
 import yio.tro.antiyoy.stuff.PointYio;
 
-public class RenderUnits extends GameRender{
+public class RenderUnits extends GameRender {
 
     public RenderUnits(GameRendersList gameRendersList) {
         super(gameRendersList);

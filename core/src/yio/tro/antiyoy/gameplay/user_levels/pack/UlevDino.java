@@ -2,7 +2,7 @@ package yio.tro.antiyoy.gameplay.user_levels.pack;
 
 import yio.tro.antiyoy.gameplay.user_levels.AbstractUserLevel;
 
-public class UlevDino extends AbstractUserLevel{
+public class UlevDino extends AbstractUserLevel {
 
     @Override
     public String getLevelCode() {

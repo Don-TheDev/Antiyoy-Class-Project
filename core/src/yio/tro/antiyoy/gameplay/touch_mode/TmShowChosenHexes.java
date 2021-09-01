@@ -6,7 +6,7 @@ import yio.tro.antiyoy.menu.scenes.AbstractScene;
 
 import java.util.ArrayList;
 
-public class TmShowChosenHexes extends TouchMode{
+public class TmShowChosenHexes extends TouchMode {
 
     AbstractScene parentScene;
 

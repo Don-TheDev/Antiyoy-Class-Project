@@ -7,7 +7,7 @@ import yio.tro.antiyoy.menu.behaviors.Reaction;
 
 import java.util.ArrayList;
 
-public class SceneTestResults extends AbstractScene{
+public class SceneTestResults extends AbstractScene {
 
 
     private ButtonYio label;

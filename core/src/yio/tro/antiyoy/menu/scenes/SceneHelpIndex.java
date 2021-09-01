@@ -4,9 +4,8 @@ import yio.tro.antiyoy.menu.Animation;
 import yio.tro.antiyoy.menu.ButtonYio;
 import yio.tro.antiyoy.menu.MenuControllerYio;
 import yio.tro.antiyoy.menu.behaviors.Reaction;
-import yio.tro.antiyoy.stuff.LanguagesManager;
 
-public class SceneHelpIndex extends AbstractScene{
+public class SceneHelpIndex extends AbstractScene {
 
 
     private int topicsNumber;

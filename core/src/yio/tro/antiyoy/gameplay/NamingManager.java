@@ -8,7 +8,7 @@ import yio.tro.antiyoy.gameplay.rules.GameRules;
 import java.util.HashMap;
 import java.util.Map;
 
-public class NamingManager implements SavableYio{
+public class NamingManager implements SavableYio {
 
     GameController gameController;
     private HashMap<Hex, String> renamedHexes;

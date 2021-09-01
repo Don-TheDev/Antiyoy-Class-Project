@@ -6,12 +6,11 @@ import yio.tro.antiyoy.factor_yio.FactorYio;
 import yio.tro.antiyoy.menu.InterfaceElement;
 import yio.tro.antiyoy.menu.keyboard.AbstractKbReaction;
 import yio.tro.antiyoy.menu.render.MenuRender;
-import yio.tro.antiyoy.menu.scenes.Scenes;
 import yio.tro.antiyoy.stuff.*;
 
 import java.util.ArrayList;
 
-public class ContextListMenuElement extends InterfaceElement{
+public class ContextListMenuElement extends InterfaceElement {
 
     public RectangleYio position, viewPosition;
     public FactorYio appearFactor;

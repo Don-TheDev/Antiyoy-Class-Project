@@ -4,7 +4,7 @@ import yio.tro.antiyoy.gameplay.DebugFlags;
 import yio.tro.antiyoy.menu.scenes.Scenes;
 import yio.tro.antiyoy.stuff.Fonts;
 
-public class TestEnableForceKeys extends AbstractTest{
+public class TestEnableForceKeys extends AbstractTest {
 
     @Override
     public String getName() {

@@ -5,7 +5,6 @@ import com.badlogic.gdx.Preferences;
 import yio.tro.antiyoy.gameplay.GameController;
 import yio.tro.antiyoy.gameplay.editor.EditorSaveSystem;
 import yio.tro.antiyoy.gameplay.editor.LevelEditor;
-import yio.tro.antiyoy.gameplay.rules.GameRules;
 import yio.tro.antiyoy.menu.ButtonYio;
 import yio.tro.antiyoy.menu.MenuControllerYio;
 import yio.tro.antiyoy.menu.behaviors.Reaction;
@@ -19,7 +18,7 @@ import yio.tro.antiyoy.menu.scrollable_list.ScrollableListYio;
 
 import java.util.ArrayList;
 
-public class SceneEditorLoad extends AbstractScene{
+public class SceneEditorLoad extends AbstractScene {
 
     ScrollableListYio scrollableListYio;
     private Reaction rbBack;

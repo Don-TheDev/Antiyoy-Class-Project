@@ -45,11 +45,16 @@ public class FactorYio {
     private MoveBehavior getMoveBehaviorByIndex(int index) {
         switch (index) {
             default:
-            case 0: return MoveBehavior.moveBehaviorSimple;
-            case 1: return MoveBehavior.moveBehaviorLighty;
-            case 2: return MoveBehavior.moveBehaviorMaterial;
-            case 3: return MoveBehavior.moveBehaviorApproach;
-            case 4: return MoveBehavior.moveBehaviorPlayful;
+            case 0:
+                return MoveBehavior.moveBehaviorSimple;
+            case 1:
+                return MoveBehavior.moveBehaviorLighty;
+            case 2:
+                return MoveBehavior.moveBehaviorMaterial;
+            case 3:
+                return MoveBehavior.moveBehaviorApproach;
+            case 4:
+                return MoveBehavior.moveBehaviorPlayful;
         }
     }
 

@@ -7,7 +7,7 @@ import yio.tro.antiyoy.gameplay.rules.GameRules;
 import yio.tro.antiyoy.menu.diplomacy_element.DiplomacyElement;
 import yio.tro.antiyoy.menu.scenes.Scenes;
 
-public class TmDefault extends TouchMode{
+public class TmDefault extends TouchMode {
 
     public TmDefault(GameController gameController) {
         super(gameController);

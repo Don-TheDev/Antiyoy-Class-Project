@@ -8,7 +8,7 @@ import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.RenderableTextYio;
 import yio.tro.antiyoy.stuff.SelectionEngineYio;
 
-public class RenderMoneyViewElement extends MenuRender{
+public class RenderMoneyViewElement extends MenuRender {
 
 
     private MoneyViewElement moneyViewElement;

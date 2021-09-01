@@ -1,7 +1,6 @@
 package yio.tro.antiyoy.menu.customizable_list;
 
 import yio.tro.antiyoy.gameplay.GameController;
-import yio.tro.antiyoy.menu.InterfaceElement;
 import yio.tro.antiyoy.menu.render.AbstractRenderCustomListItem;
 import yio.tro.antiyoy.stuff.PointYio;
 import yio.tro.antiyoy.stuff.RectangleYio;
@@ -48,7 +47,8 @@ public abstract class AbstractCustomListItem {
 
     public boolean isCurrentlyVisible() {
         if (viewPosition.y + viewPosition.height < customizableListYio.getPosition().y) return false;
-        if (viewPosition.y > customizableListYio.getPosition().y + customizableListYio.getPosition().height) return false;
+        if (viewPosition.y > customizableListYio.getPosition().y + customizableListYio.getPosition().height)
+            return false;
 
         return true;
     }

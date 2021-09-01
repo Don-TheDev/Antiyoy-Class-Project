@@ -8,7 +8,7 @@ import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.PointYio;
 import yio.tro.antiyoy.stuff.RectangleYio;
 
-public class NotificationElement extends InterfaceElement{
+public class NotificationElement extends InterfaceElement {
 
     public static final int AUTO_HIDE_DELAY = 1500;
 

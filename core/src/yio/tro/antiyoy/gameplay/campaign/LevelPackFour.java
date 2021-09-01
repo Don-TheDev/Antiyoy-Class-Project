@@ -2,7 +2,7 @@ package yio.tro.antiyoy.gameplay.campaign;
 
 import yio.tro.antiyoy.gameplay.loading.LoadingParameters;
 
-public class LevelPackFour extends AbstractLevelPack{
+public class LevelPackFour extends AbstractLevelPack {
 
     public LevelPackFour(CampaignLevelFactory campaignLevelFactory) {
         super(campaignLevelFactory);

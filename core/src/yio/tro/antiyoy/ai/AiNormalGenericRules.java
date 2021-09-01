@@ -17,7 +17,6 @@ public class AiNormalGenericRules extends ArtificialIntelligenceGeneric{
     @Override
     public void makeMove() {
         moveUnits();
-
         spendMoneyAndMergeUnits();
     }
 

@@ -17,7 +17,7 @@ import yio.tro.antiyoy.stuff.Fonts;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.RenderableTextYio;
 
-public class ReplayListItem extends AbstractCustomListItem implements LiEditable{
+public class ReplayListItem extends AbstractCustomListItem implements LiEditable {
 
     public RenderableTextYio title;
     public RenderableTextYio description;

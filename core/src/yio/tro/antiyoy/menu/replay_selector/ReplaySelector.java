@@ -219,7 +219,7 @@ public class ReplaySelector extends InterfaceElement {
 
 
     private void updateHook() {
-        hook = + (float) scrollEngineYio.getSlider().a;
+        hook = +(float) scrollEngineYio.getSlider().a;
 
         hook -= (1 - appearFactor.get()) * 0.2f * GraphicsYio.width;
     }

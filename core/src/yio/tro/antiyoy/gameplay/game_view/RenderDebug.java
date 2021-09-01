@@ -7,7 +7,7 @@ import yio.tro.antiyoy.gameplay.Hex;
 import yio.tro.antiyoy.stuff.CircleYio;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderDebug extends GameRender{
+public class RenderDebug extends GameRender {
 
 
     private TextureRegion redPixel;

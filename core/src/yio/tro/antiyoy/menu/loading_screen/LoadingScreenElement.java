@@ -8,7 +8,7 @@ import yio.tro.antiyoy.menu.MenuControllerYio;
 import yio.tro.antiyoy.menu.render.MenuRender;
 import yio.tro.antiyoy.stuff.*;
 
-public class LoadingScreenElement extends InterfaceElement{
+public class LoadingScreenElement extends InterfaceElement {
 
     public MenuControllerYio menuControllerYio;
     public RectangleYio viewPosition;

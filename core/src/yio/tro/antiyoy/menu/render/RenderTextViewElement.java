@@ -6,7 +6,7 @@ import yio.tro.antiyoy.menu.InterfaceElement;
 import yio.tro.antiyoy.menu.TextViewElement;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderTextViewElement extends MenuRender{
+public class RenderTextViewElement extends MenuRender {
 
 
     private TextViewElement textViewElement;

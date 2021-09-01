@@ -9,7 +9,7 @@ import yio.tro.antiyoy.stuff.Fonts;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.LanguagesManager;
 
-public class PrepareForAttackPropositionDialog extends AbstractDiplomaticDialog implements IDipEntityReceiver{
+public class PrepareForAttackPropositionDialog extends AbstractDiplomaticDialog implements IDipEntityReceiver {
 
     DiplomaticEntity sender, recipient;
     DiplomaticEntity target;

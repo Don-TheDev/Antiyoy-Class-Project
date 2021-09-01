@@ -7,7 +7,7 @@ import yio.tro.antiyoy.menu.InterfaceElement;
 import yio.tro.antiyoy.menu.NotificationElement;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderNotificationElement extends MenuRender{
+public class RenderNotificationElement extends MenuRender {
 
 
     private TextureRegion backgroundTexture;
@@ -44,7 +44,7 @@ public class RenderNotificationElement extends MenuRender{
 
 
     private void renderMessage() {
-        Color color =  font.getColor();
+        Color color = font.getColor();
         font.setColor(Color.BLACK);
         GraphicsYio.setFontAlpha(font, notificationElement.getFactor().get());
 

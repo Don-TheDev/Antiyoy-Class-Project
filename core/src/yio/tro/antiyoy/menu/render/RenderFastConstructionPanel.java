@@ -1,14 +1,13 @@
 package yio.tro.antiyoy.menu.render;
 
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import yio.tro.antiyoy.SettingsManager;
 import yio.tro.antiyoy.menu.InterfaceElement;
 import yio.tro.antiyoy.menu.fast_construction.FastConstructionPanel;
 import yio.tro.antiyoy.menu.fast_construction.FcpItem;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.RectangleYio;
 
-public class RenderFastConstructionPanel extends MenuRender{
+public class RenderFastConstructionPanel extends MenuRender {
 
 
     private TextureRegion backgroundTexture;
@@ -151,14 +150,22 @@ public class RenderFastConstructionPanel extends MenuRender{
 
     private TextureRegion getSkinDependentItemTexture(FcpItem item) {
         switch (item.actionType) {
-            default: return null;
-            case unit_1: return man0;
-            case unit_2: return man1;
-            case unit_3: return man2;
-            case unit_4: return man3;
-            case farm: return house;
-            case tower: return tower;
-            case strong_tower: return strongTower;
+            default:
+                return null;
+            case unit_1:
+                return man0;
+            case unit_2:
+                return man1;
+            case unit_3:
+                return man2;
+            case unit_4:
+                return man3;
+            case farm:
+                return house;
+            case tower:
+                return tower;
+            case strong_tower:
+                return strongTower;
         }
     }
 

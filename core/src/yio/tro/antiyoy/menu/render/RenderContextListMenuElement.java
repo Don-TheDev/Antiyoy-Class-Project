@@ -8,7 +8,7 @@ import yio.tro.antiyoy.menu.context_list_menu.ClmItem;
 import yio.tro.antiyoy.menu.context_list_menu.ContextListMenuElement;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderContextListMenuElement extends MenuRender{
+public class RenderContextListMenuElement extends MenuRender {
 
 
     private ContextListMenuElement contextListMenuElement;

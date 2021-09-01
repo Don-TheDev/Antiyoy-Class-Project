@@ -7,7 +7,7 @@ import yio.tro.antiyoy.menu.InterfaceElement;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.RectangleYio;
 
-public class RenderShadow extends MenuRender{
+public class RenderShadow extends MenuRender {
 
     public static final int SRC_SIZE = 400;
     public static final int BLUR_RADIUS = 13;

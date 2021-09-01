@@ -11,7 +11,7 @@ import yio.tro.antiyoy.stuff.object_pool.ObjectPoolYio;
 
 import java.util.ArrayList;
 
-public class FireworksElement extends InterfaceElement{
+public class FireworksElement extends InterfaceElement {
 
 
     MenuControllerYio menuControllerYio;
@@ -40,7 +40,7 @@ public class FireworksElement extends InterfaceElement{
         tempPoint = new PointYio();
         sequences = new ArrayList<>();
 
-        defGravityAngle = - Math.PI / 2;
+        defGravityAngle = -Math.PI / 2;
 
         initPools();
         initRepeats();
@@ -181,7 +181,7 @@ public class FireworksElement extends InterfaceElement{
     private void moveParticles() {
         repeatUpdateAccelerometer.move();
 
-        gravityAngleDelta = - accelX / 5f;
+        gravityAngleDelta = -accelX / 5f;
         if (gravityAngleDelta > 0.5) {
             gravityAngleDelta = 0.5;
         }

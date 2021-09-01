@@ -10,7 +10,7 @@ import java.util.ArrayList;
 /**
  * Created by yiotro on 24.05.2015.
  */
-public class Unit implements EncodeableYio{
+public class Unit implements EncodeableYio {
 
     public Hex lastHex, currentHex;
     public final PointYio currentPos;

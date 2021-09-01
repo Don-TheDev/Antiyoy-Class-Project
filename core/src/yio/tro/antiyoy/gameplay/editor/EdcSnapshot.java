@@ -18,7 +18,7 @@ public class EdcSnapshot {
     }
 
 
-    void clear () {
+    void clear() {
         pool.clearExternalList();
     }
 

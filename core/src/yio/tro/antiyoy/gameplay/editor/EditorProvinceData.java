@@ -1,11 +1,9 @@
 package yio.tro.antiyoy.gameplay.editor;
 
-import yio.tro.antiyoy.gameplay.GameController;
 import yio.tro.antiyoy.gameplay.Hex;
 import yio.tro.antiyoy.gameplay.Province;
 import yio.tro.antiyoy.gameplay.data_storage.EncodeableYio;
 import yio.tro.antiyoy.gameplay.name_generator.CityNameGenerator;
-import yio.tro.antiyoy.gameplay.name_generator.NameGenerator;
 import yio.tro.antiyoy.gameplay.rules.GameRules;
 import yio.tro.antiyoy.stuff.Fonts;
 import yio.tro.antiyoy.stuff.PointYio;
@@ -13,7 +11,7 @@ import yio.tro.antiyoy.stuff.object_pool.ReusableYio;
 
 import java.util.ArrayList;
 
-public class EditorProvinceData implements ReusableYio, EncodeableYio{
+public class EditorProvinceData implements ReusableYio, EncodeableYio {
 
     public String name;
     public int startingMoney;

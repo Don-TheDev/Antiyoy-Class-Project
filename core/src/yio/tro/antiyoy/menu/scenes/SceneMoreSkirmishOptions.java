@@ -13,7 +13,7 @@ import yio.tro.antiyoy.menu.slider.SliderYio;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.LanguagesManager;
 
-public class SceneMoreSkirmishOptions extends AbstractScene{
+public class SceneMoreSkirmishOptions extends AbstractScene {
 
 
     private ButtonYio label;

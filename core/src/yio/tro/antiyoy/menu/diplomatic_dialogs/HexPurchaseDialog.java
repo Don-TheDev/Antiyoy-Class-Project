@@ -10,7 +10,7 @@ import yio.tro.antiyoy.stuff.LanguagesManager;
 
 import java.util.ArrayList;
 
-public class HexPurchaseDialog extends AbstractDiplomaticDialog{
+public class HexPurchaseDialog extends AbstractDiplomaticDialog {
 
     DiplomaticEntity sender, recipient;
     ArrayList<Hex> hexesToBuy;

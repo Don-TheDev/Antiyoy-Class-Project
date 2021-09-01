@@ -4,7 +4,7 @@ import yio.tro.antiyoy.gameplay.*;
 
 import static yio.tro.antiyoy.gameplay.rules.GameRules.*;
 
-public class RulesetGeneric extends Ruleset{
+public class RulesetGeneric extends Ruleset {
 
 
     public RulesetGeneric(GameController gameController) {
@@ -22,7 +22,6 @@ public class RulesetGeneric extends Ruleset{
     public boolean canSpawnPalmOnHex(Hex hex) {
         return hex.isFree() && hex.isNearWater() && hex.hasPalmReadyToExpandNearby() && gameController.getRandom().nextDouble() < 0.3;
     }
-
 
 
     @Override

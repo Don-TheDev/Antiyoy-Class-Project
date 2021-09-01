@@ -3,7 +3,7 @@ package yio.tro.antiyoy.menu.scenes.editor;
 import yio.tro.antiyoy.menu.MenuControllerYio;
 import yio.tro.antiyoy.menu.scenes.AbstractScene;
 
-public abstract class AbstractEditorPanel extends AbstractScene{
+public abstract class AbstractEditorPanel extends AbstractScene {
 
     public AbstractEditorPanel(MenuControllerYio menuControllerYio) {
         super(menuControllerYio);

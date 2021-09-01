@@ -3,7 +3,7 @@ package yio.tro.antiyoy.menu;
 import yio.tro.antiyoy.menu.behaviors.Reaction;
 import yio.tro.antiyoy.menu.render.MenuRender;
 
-public class InvisibleCloseElement extends AbstractRectangularUiElement{
+public class InvisibleCloseElement extends AbstractRectangularUiElement {
 
     Reaction reaction;
     boolean ready;

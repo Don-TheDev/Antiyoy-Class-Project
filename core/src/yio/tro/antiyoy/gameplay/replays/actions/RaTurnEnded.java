@@ -3,7 +3,7 @@ package yio.tro.antiyoy.gameplay.replays.actions;
 import yio.tro.antiyoy.gameplay.FieldManager;
 import yio.tro.antiyoy.gameplay.GameController;
 
-public class RaTurnEnded extends RepAction{
+public class RaTurnEnded extends RepAction {
 
     @Override
     public void initType() {

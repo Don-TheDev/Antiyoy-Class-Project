@@ -4,6 +4,4 @@ public interface IColorChoiceListener {
 
 
     void onColorChosen(int color);
-
-
 }

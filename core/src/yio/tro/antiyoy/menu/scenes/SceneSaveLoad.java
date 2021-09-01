@@ -6,7 +6,7 @@ import yio.tro.antiyoy.menu.MenuControllerYio;
 import yio.tro.antiyoy.menu.behaviors.Reaction;
 import yio.tro.antiyoy.menu.save_slot_selector.SaveSlotSelector;
 
-public class SceneSaveLoad extends AbstractScene{
+public class SceneSaveLoad extends AbstractScene {
 
 
     private ButtonYio backButton;

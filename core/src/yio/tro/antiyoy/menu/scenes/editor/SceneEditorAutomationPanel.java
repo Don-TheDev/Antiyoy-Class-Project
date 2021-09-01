@@ -1,6 +1,5 @@
 package yio.tro.antiyoy.menu.scenes.editor;
 
-import yio.tro.antiyoy.YioGdxGame;
 import yio.tro.antiyoy.menu.Animation;
 import yio.tro.antiyoy.menu.ButtonYio;
 import yio.tro.antiyoy.menu.MenuControllerYio;
@@ -9,7 +8,7 @@ import yio.tro.antiyoy.menu.behaviors.editor.EditorReactions;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.RectangleYio;
 
-public class SceneEditorAutomationPanel extends AbstractEditorPanel{
+public class SceneEditorAutomationPanel extends AbstractEditorPanel {
 
 
     private ButtonYio basePanel;

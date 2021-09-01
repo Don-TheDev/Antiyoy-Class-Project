@@ -12,7 +12,7 @@ import yio.tro.antiyoy.stuff.GraphicsYio;
 
 import java.util.ArrayList;
 
-public class SceneCheatsMenu extends AbstractScene{
+public class SceneCheatsMenu extends AbstractScene {
 
 
     private Reaction openInEditorReaction;

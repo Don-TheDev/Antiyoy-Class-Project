@@ -4,7 +4,7 @@ import yio.tro.antiyoy.factor_yio.FactorYio;
 import yio.tro.antiyoy.menu.render.MenuRender;
 import yio.tro.antiyoy.stuff.*;
 
-public class TextLabelElement extends InterfaceElement{
+public class TextLabelElement extends InterfaceElement {
 
     MenuControllerYio menuControllerYio;
     public RenderableTextYio title;

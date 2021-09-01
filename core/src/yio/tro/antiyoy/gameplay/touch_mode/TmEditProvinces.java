@@ -10,7 +10,7 @@ import yio.tro.antiyoy.stuff.object_pool.ObjectPoolYio;
 
 import java.util.ArrayList;
 
-public class TmEditProvinces extends TouchMode{
+public class TmEditProvinces extends TouchMode {
 
     public ArrayList<TmepCityName> cityNames;
     ObjectPoolYio<TmepCityName> poolCityNames;

@@ -8,7 +8,7 @@ import yio.tro.antiyoy.menu.scrollable_list.ListItemYio;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.RectangleYio;
 
-public class RenderDiplomaticLogPanel extends MenuRender{
+public class RenderDiplomaticLogPanel extends MenuRender {
 
 
     protected TextureRegion backgroundTexture;

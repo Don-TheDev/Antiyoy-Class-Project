@@ -14,7 +14,7 @@ import yio.tro.antiyoy.stuff.PointYio;
 
 import java.util.ArrayList;
 
-public class AgreeToBuyHexesDialog extends AbstractDiplomaticDialog{
+public class AgreeToBuyHexesDialog extends AbstractDiplomaticDialog {
 
     DiplomaticEntity sender, recipient;
     ArrayList<Hex> hexesToBuy;

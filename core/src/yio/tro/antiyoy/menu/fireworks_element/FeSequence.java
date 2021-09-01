@@ -3,7 +3,7 @@ package yio.tro.antiyoy.menu.fireworks_element;
 import yio.tro.antiyoy.stuff.PointYio;
 import yio.tro.antiyoy.stuff.object_pool.ReusableYio;
 
-public class FeSequence implements ReusableYio{
+public class FeSequence implements ReusableYio {
 
     PointYio position;
     boolean activated;

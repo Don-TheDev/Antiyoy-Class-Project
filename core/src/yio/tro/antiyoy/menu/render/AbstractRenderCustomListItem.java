@@ -7,7 +7,7 @@ import yio.tro.antiyoy.menu.customizable_list.AbstractCustomListItem;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.RenderableTextYio;
 
-public abstract class AbstractRenderCustomListItem extends MenuRender{
+public abstract class AbstractRenderCustomListItem extends MenuRender {
 
     public abstract void loadTextures();
 

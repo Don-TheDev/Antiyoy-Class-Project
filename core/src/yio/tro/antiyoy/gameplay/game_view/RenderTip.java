@@ -7,7 +7,7 @@ import yio.tro.antiyoy.gameplay.SelectionTipType;
 import yio.tro.antiyoy.stuff.Fonts;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderTip extends GameRender{
+public class RenderTip extends GameRender {
 
     public RenderTip(GameRendersList gameRendersList) {
         super(gameRendersList);

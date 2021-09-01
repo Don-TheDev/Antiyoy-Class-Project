@@ -4,7 +4,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.RenderableTextYio;
 
-public abstract class AbstractSingleLineItem extends AbstractCustomListItem{
+public abstract class AbstractSingleLineItem extends AbstractCustomListItem {
 
     public RenderableTextYio title;
 

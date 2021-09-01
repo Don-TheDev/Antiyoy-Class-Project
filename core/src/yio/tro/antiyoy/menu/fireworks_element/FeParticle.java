@@ -8,7 +8,7 @@ import yio.tro.antiyoy.stuff.RectangleYio;
 import yio.tro.antiyoy.stuff.Yio;
 import yio.tro.antiyoy.stuff.object_pool.ReusableYio;
 
-public class FeParticle implements ReusableYio{
+public class FeParticle implements ReusableYio {
 
 
     RectangleYio limits;
@@ -94,7 +94,7 @@ public class FeParticle implements ReusableYio{
     private void applyLimits() {
         if (position.x > limits.x + limits.width - viewRadius) {
             position.x = (float) (limits.x + limits.width - viewRadius);
-            speed.x = - Math.abs(speed.x);
+            speed.x = -Math.abs(speed.x);
             aDelta *= 0.9;
         }
 

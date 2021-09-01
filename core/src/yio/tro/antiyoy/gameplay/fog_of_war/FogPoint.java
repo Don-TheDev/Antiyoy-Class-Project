@@ -4,7 +4,7 @@ import yio.tro.antiyoy.gameplay.Hex;
 import yio.tro.antiyoy.stuff.PointYio;
 import yio.tro.antiyoy.stuff.object_pool.ReusableYio;
 
-public class FogPoint implements ReusableYio{
+public class FogPoint implements ReusableYio {
 
 
     FogOfWarManager fogOfWarManager;

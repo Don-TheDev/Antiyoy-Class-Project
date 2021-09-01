@@ -7,7 +7,7 @@ import yio.tro.antiyoy.menu.ButtonYio;
 import yio.tro.antiyoy.menu.MenuControllerYio;
 import yio.tro.antiyoy.menu.behaviors.Reaction;
 
-public class SceneSecretScreen extends AbstractScene{
+public class SceneSecretScreen extends AbstractScene {
 
 
     private Reaction rbDebugTests;

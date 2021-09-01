@@ -82,7 +82,8 @@ public class DeItem implements ReusableYio, Comparable<DeItem> {
 
 
     public boolean isTopVisible() {
-        if (position.y + position.height / 2 > diplomacyElement.internalBackground.y + diplomacyElement.internalBackground.height) return false;
+        if (position.y + position.height / 2 > diplomacyElement.internalBackground.y + diplomacyElement.internalBackground.height)
+            return false;
         if (position.y + position.height < diplomacyElement.internalBackground.y) return false;
 
         return true;
@@ -90,7 +91,8 @@ public class DeItem implements ReusableYio, Comparable<DeItem> {
 
 
     public boolean isBottomVisible() {
-        if (position.y > diplomacyElement.internalBackground.y + diplomacyElement.internalBackground.height) return false;
+        if (position.y > diplomacyElement.internalBackground.y + diplomacyElement.internalBackground.height)
+            return false;
         if (position.y + position.height / 2 < diplomacyElement.internalBackground.y) return false;
 
         return true;

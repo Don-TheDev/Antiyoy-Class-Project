@@ -69,15 +69,24 @@ public class RenderFireworksElement extends MenuRender {
 
         switch (particle.viewType) {
             default:
-            case 0: return getGameView().texturesManager.manTextures[0].getLowest();
-            case 1: return getGameView().texturesManager.manTextures[1].getLowest();
-            case 2: return getGameView().texturesManager.manTextures[2].getLowest();
-            case 3: return getGameView().texturesManager.manTextures[3].getLowest();
-            case 4: return getGameView().texturesManager.graveTexture.getLowest();
-            case 5: return getGameView().texturesManager.houseTexture.getLowest();
-            case 6: return getGameView().texturesManager.palmTexture.getLowest();
-            case 7: return getGameView().texturesManager.pineTexture.getLowest();
-            case 8: return getGameView().texturesManager.towerTexture.getLowest();
+            case 0:
+                return getGameView().texturesManager.manTextures[0].getLowest();
+            case 1:
+                return getGameView().texturesManager.manTextures[1].getLowest();
+            case 2:
+                return getGameView().texturesManager.manTextures[2].getLowest();
+            case 3:
+                return getGameView().texturesManager.manTextures[3].getLowest();
+            case 4:
+                return getGameView().texturesManager.graveTexture.getLowest();
+            case 5:
+                return getGameView().texturesManager.houseTexture.getLowest();
+            case 6:
+                return getGameView().texturesManager.palmTexture.getLowest();
+            case 7:
+                return getGameView().texturesManager.pineTexture.getLowest();
+            case 8:
+                return getGameView().texturesManager.towerTexture.getLowest();
         }
     }
 

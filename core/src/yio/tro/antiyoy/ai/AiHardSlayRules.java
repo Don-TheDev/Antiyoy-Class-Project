@@ -1,9 +1,6 @@
 package yio.tro.antiyoy.ai;
 
 import yio.tro.antiyoy.gameplay.GameController;
-import yio.tro.antiyoy.gameplay.Unit;
-
-import java.util.ArrayList;
 
 
 public class AiHardSlayRules extends ArtificialIntelligence {
@@ -16,9 +13,7 @@ public class AiHardSlayRules extends ArtificialIntelligence {
     @Override
     public void makeMove() {
         moveUnits();
-
         spendMoneyAndMergeUnits();
-
         moveAfkUnits();
     }
 }

@@ -8,7 +8,7 @@ import yio.tro.antiyoy.gameplay.Obj;
 import yio.tro.antiyoy.gameplay.rules.GameRules;
 import yio.tro.antiyoy.stuff.PointYio;
 
-public class RenderSolidObjects extends GameRender{
+public class RenderSolidObjects extends GameRender {
 
 
     private TextureRegion currentObjectTexture;

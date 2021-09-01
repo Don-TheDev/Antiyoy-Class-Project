@@ -9,7 +9,7 @@ import yio.tro.antiyoy.menu.scenes.Scenes;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.LanguagesManager;
 
-public class SceneMapTooBig extends AbstractScene{
+public class SceneMapTooBig extends AbstractScene {
 
     ButtonYio panel, okButton;
 

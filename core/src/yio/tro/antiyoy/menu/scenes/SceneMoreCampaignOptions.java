@@ -2,17 +2,15 @@ package yio.tro.antiyoy.menu.scenes;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Preferences;
-import yio.tro.antiyoy.gameplay.ColorsManager;
-import yio.tro.antiyoy.menu.*;
-import yio.tro.antiyoy.menu.color_picking.ColorHolderElement;
-import yio.tro.antiyoy.menu.slider.SliderBehavior;
-import yio.tro.antiyoy.menu.slider.SliderYio;
-import yio.tro.antiyoy.stuff.GraphicsYio;
+import yio.tro.antiyoy.menu.Animation;
+import yio.tro.antiyoy.menu.ButtonYio;
+import yio.tro.antiyoy.menu.CheckButtonYio;
+import yio.tro.antiyoy.menu.MenuControllerYio;
 import yio.tro.antiyoy.menu.behaviors.Reaction;
+import yio.tro.antiyoy.menu.color_picking.ColorHolderElement;
 import yio.tro.antiyoy.stuff.LanguagesManager;
-import yio.tro.antiyoy.stuff.RectangleYio;
 
-public class SceneMoreCampaignOptions extends AbstractScene{
+public class SceneMoreCampaignOptions extends AbstractScene {
 
 
     private CheckButtonYio chkSlayRules;

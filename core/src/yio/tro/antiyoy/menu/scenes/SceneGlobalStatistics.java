@@ -8,7 +8,7 @@ import yio.tro.antiyoy.menu.behaviors.Reaction;
 import yio.tro.antiyoy.stuff.RectangleYio;
 import yio.tro.antiyoy.stuff.Yio;
 
-public class SceneGlobalStatistics extends AbstractScene{
+public class SceneGlobalStatistics extends AbstractScene {
 
 
     private Reaction rbBack;

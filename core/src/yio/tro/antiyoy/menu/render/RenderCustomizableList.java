@@ -11,7 +11,7 @@ import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.Masking;
 import yio.tro.antiyoy.stuff.RectangleYio;
 
-public class RenderCustomizableList extends MenuRender{
+public class RenderCustomizableList extends MenuRender {
 
     private CustomizableListYio customizableListYio;
     private ShapeRenderer shapeRenderer;

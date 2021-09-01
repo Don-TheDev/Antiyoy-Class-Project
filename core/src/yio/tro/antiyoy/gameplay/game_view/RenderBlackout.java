@@ -3,7 +3,7 @@ package yio.tro.antiyoy.gameplay.game_view;
 import com.badlogic.gdx.graphics.Color;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderBlackout extends GameRender{
+public class RenderBlackout extends GameRender {
 
     public RenderBlackout(GameRendersList gameRendersList) {
         super(gameRendersList);

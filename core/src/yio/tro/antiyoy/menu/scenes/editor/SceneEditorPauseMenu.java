@@ -11,7 +11,7 @@ import yio.tro.antiyoy.menu.behaviors.Reaction;
 import yio.tro.antiyoy.menu.scenes.AbstractScene;
 import yio.tro.antiyoy.menu.scenes.Scenes;
 
-public class SceneEditorPauseMenu extends AbstractScene{
+public class SceneEditorPauseMenu extends AbstractScene {
 
     public ButtonYio resumeButton;
     private double bHeight;

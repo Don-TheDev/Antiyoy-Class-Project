@@ -9,7 +9,7 @@ import yio.tro.antiyoy.stuff.LanguagesManager;
 
 import java.util.ArrayList;
 
-public class ConfirmBlackMarkDialog extends AbstractDiplomaticDialog{
+public class ConfirmBlackMarkDialog extends AbstractDiplomaticDialog {
 
     ArrayList<String> lines;
     DiplomaticEntity selectedEntity;

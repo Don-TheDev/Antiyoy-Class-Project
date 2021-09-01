@@ -4,6 +4,4 @@ public abstract class SliReaction {
 
 
     public abstract void apply(AbstractCustomListItem item);
-
-
 }

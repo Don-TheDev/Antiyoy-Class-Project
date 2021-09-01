@@ -24,7 +24,7 @@ import javax.swing.*;
 import java.util.ArrayList;
 import java.util.ListIterator;
 
-public class FieldManager implements EncodeableYio{
+public class FieldManager implements EncodeableYio {
 
     public final GameController gameController;
     public boolean letsCheckAnimHexes;
@@ -62,11 +62,11 @@ public class FieldManager implements EncodeableYio{
     public MassMarchManager massMarchManager;
     public AutomaticTransitionWorker automaticTransitionWorker;
 
-        public void sayDisaster(Disaster disaster) {
-            JOptionPane.showMessageDialog(new JFrame(), disaster.toString(), "Alert", JOptionPane.INFORMATION_MESSAGE);
-        }
+    public void sayDisaster(Disaster disaster) {
+        JOptionPane.showMessageDialog(new JFrame(), disaster.toString(), "Alert", JOptionPane.INFORMATION_MESSAGE);
+    }
 
-        public FieldManager(GameController gameController) {
+    public FieldManager(GameController gameController) {
         this.gameController = gameController;
 
         cos60 = (float) Math.cos(Math.PI / 3d);
@@ -491,7 +491,6 @@ public class FieldManager implements EncodeableYio{
     }
 
 
-
     private ArrayList<Hex> getNewPinesList() {
         ArrayList<Hex> newPinesList = new ArrayList<Hex>();
 
@@ -518,7 +517,6 @@ public class FieldManager implements EncodeableYio{
     }
 
 
-
     private void spawnPine(Hex hex) {
         if (!hex.canContainObjects) return;
 
@@ -537,7 +535,6 @@ public class FieldManager implements EncodeableYio{
         hex.animFactor.setValues(1, 0);
         gameController.replayManager.onPalmSpawned(hex);
     }
-
 
 
     public void createPlayerHexCount() {
@@ -800,8 +797,8 @@ public class FieldManager implements EncodeableYio{
     }
 
     public void spawnDisaster(Hex hex, int type) {
-            Disaster d = null;
-        switch (type){
+        Disaster d = null;
+        switch (type) {
             case SelectionTipType.ACID_RAIN:
                 d = DisasterFactory.create(Disasters.ACID_RAIN, hex);
                 break;
@@ -1006,13 +1003,14 @@ public class FieldManager implements EncodeableYio{
         tickleMoneySign();
         return false;
     }
+
     public boolean executeDisaster(Province province, Hex hex, int type) {
         if (province == null) return false;
         if (province.hasMoneyForDisaster(type)) {
             gameController.takeSnapshot();
             spawnDisaster(hex, type);
             addAnimHex(hex);
-            switch(type){
+            switch (type) {
                 case SelectionTipType.ACID_RAIN:
                     province.disasterPoints -= GameRules.PRICE_ACID_RAID;
                     gameController.getMatchStatistics().onMoneySpent(gameController.turn, GameRules.PRICE_ACID_RAID);
@@ -1374,10 +1372,10 @@ public class FieldManager implements EncodeableYio{
     }
 
     //Creates chance for Natural Disasters to spawn, assuming they are enabled
-    public void disasterTurnEnded(){
-        if(GameRules.naturalDisastersEnabled){
-            if(/*gameController.random.nextInt(2) == 1*/true){
-                switch(gameController.random.nextInt(4)){
+    public void disasterTurnEnded() {
+        if (GameRules.naturalDisastersEnabled) {
+            if (/*gameController.random.nextInt(2) == 1*/true) {
+                switch (gameController.random.nextInt(4)) {
                     case 0:
                         DisasterFactory.create(Disasters.LOCUSTS).execute(this);
                         break;
@@ -1394,7 +1392,6 @@ public class FieldManager implements EncodeableYio{
             }
         }
     }
-
 
 
     @Override

@@ -9,7 +9,7 @@ import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.PointYio;
 import yio.tro.antiyoy.stuff.RectangleYio;
 
-public class RenderCityNames extends GameRender{
+public class RenderCityNames extends GameRender {
 
 
     private float hvSize;

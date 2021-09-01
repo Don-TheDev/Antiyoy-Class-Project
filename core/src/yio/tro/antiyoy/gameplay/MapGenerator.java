@@ -319,7 +319,8 @@ public class MapGenerator {
         for (Hex hex : provinceList) {
             for (int i = 0; i < 6; i++) {
                 Hex adjHex = hex.getAdjacentHex(i);
-                if (adjHex.active && adjHex.sameFraction(fraction) && adjHex.numberOfFriendlyHexesNearby() > 0) return true;
+                if (adjHex.active && adjHex.sameFraction(fraction) && adjHex.numberOfFriendlyHexesNearby() > 0)
+                    return true;
             }
         }
         return false;

@@ -10,7 +10,7 @@ import yio.tro.antiyoy.menu.MenuControllerYio;
 import yio.tro.antiyoy.menu.behaviors.Reaction;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class SceneMainMenu extends AbstractScene{
+public class SceneMainMenu extends AbstractScene {
 
 
     public ButtonYio playButton;

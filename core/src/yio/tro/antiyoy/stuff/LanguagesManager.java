@@ -1,16 +1,16 @@
 package yio.tro.antiyoy.stuff;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import javax.xml.parsers.*;
-
 import android.annotation.TargetApi;
 import android.os.Build;
-import org.w3c.dom.*;
-
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
+import org.w3c.dom.*;
 import yio.tro.antiyoy.gameplay.DebugFlags;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class LanguagesManager {
     private static LanguagesManager _instance = null;
@@ -135,7 +135,7 @@ public class LanguagesManager {
                 Node language = languages.item(i);
 
                 Node secondName = language.getAttributes().getNamedItem("second_name");
-                if (    language.getAttributes().getNamedItem("name").getTextContent().equals(languageName) ||
+                if (language.getAttributes().getNamedItem("name").getTextContent().equals(languageName) ||
                         (secondName != null && secondName.getTextContent().equals(languageName))) {
                     _language.clear();
                     Element languageElement = (Element) language;

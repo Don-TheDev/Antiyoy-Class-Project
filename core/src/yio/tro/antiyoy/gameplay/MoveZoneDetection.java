@@ -108,7 +108,6 @@ public class MoveZoneDetection {
     }
 
 
-
     private void beginDetection(Hex startHex, int moveLimit) {
         result.clear();
         propagationList.clear();

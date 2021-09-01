@@ -6,7 +6,7 @@ import yio.tro.antiyoy.gameplay.Hex;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 import yio.tro.antiyoy.stuff.Yio;
 
-public class RenderHexLines extends GameRender{
+public class RenderHexLines extends GameRender {
 
     public RenderHexLines(GameRendersList gameRendersList) {
         super(gameRendersList);

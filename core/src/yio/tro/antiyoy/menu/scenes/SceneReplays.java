@@ -12,7 +12,7 @@ import yio.tro.antiyoy.stuff.LanguagesManager;
 
 import java.util.ArrayList;
 
-public class SceneReplays extends AbstractScene{
+public class SceneReplays extends AbstractScene {
 
     public CustomizableListYio customizableListYio;
 

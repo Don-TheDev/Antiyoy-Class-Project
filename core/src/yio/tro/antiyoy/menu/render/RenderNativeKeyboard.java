@@ -5,7 +5,7 @@ import yio.tro.antiyoy.menu.InterfaceElement;
 import yio.tro.antiyoy.menu.keyboard.NativeKeyboardElement;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderNativeKeyboard extends MenuRender{
+public class RenderNativeKeyboard extends MenuRender {
 
     private NativeKeyboardElement nativeKeyboardElement;
     private float alpha;

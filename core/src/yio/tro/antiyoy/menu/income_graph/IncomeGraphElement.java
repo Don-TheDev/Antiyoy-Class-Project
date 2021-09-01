@@ -12,7 +12,7 @@ import yio.tro.antiyoy.stuff.object_pool.ObjectPoolYio;
 
 import java.util.ArrayList;
 
-public class IncomeGraphElement extends InterfaceElement{
+public class IncomeGraphElement extends InterfaceElement {
 
     MenuControllerYio menuControllerYio;
     public FactorYio appearFactor;
@@ -151,7 +151,7 @@ public class IncomeGraphElement extends InterfaceElement{
             item.delta.y = y;
             item.viewPosition.width = cw;
             item.setMaxHeight(maxHeight);
-            item.setTargetHeight(((float)incomeArray[item.fraction] / maxIncomeValue) * maxHeight);
+            item.setTargetHeight(((float) incomeArray[item.fraction] / maxIncomeValue) * maxHeight);
             item.text.setString("" + incomeArray[item.fraction]);
             item.text.updateMetrics();
             x += deltaX;

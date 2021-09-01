@@ -3,7 +3,7 @@ package yio.tro.antiyoy.gameplay.game_view;
 import com.badlogic.gdx.graphics.Color;
 import yio.tro.antiyoy.stuff.PointYio;
 
-public class RenderResponseAnimHex extends GameRender{
+public class RenderResponseAnimHex extends GameRender {
 
 
     private PointYio pos;

@@ -5,7 +5,7 @@ import yio.tro.antiyoy.menu.customizable_list.AbstractCustomListItem;
 import yio.tro.antiyoy.menu.customizable_list.SkinListItem;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderSkinListItem extends AbstractRenderCustomListItem{
+public class RenderSkinListItem extends AbstractRenderCustomListItem {
 
 
     private SkinListItem slItem;

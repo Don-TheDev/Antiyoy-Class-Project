@@ -5,7 +5,7 @@ import yio.tro.antiyoy.gameplay.Province;
 import yio.tro.antiyoy.gameplay.rules.GameRules;
 import yio.tro.antiyoy.stuff.PointYio;
 
-public class RenderExclamationMarks extends GameRender{
+public class RenderExclamationMarks extends GameRender {
 
 
     public RenderExclamationMarks(GameRendersList gameRendersList) {

@@ -4,7 +4,7 @@ import yio.tro.antiyoy.menu.InterfaceElement;
 import yio.tro.antiyoy.menu.TextLabelElement;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
-public class RenderTextLabel extends MenuRender{
+public class RenderTextLabel extends MenuRender {
 
 
     private TextLabelElement textLabelElement;

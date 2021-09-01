@@ -2,7 +2,7 @@ package yio.tro.antiyoy.gameplay.game_view;
 
 import yio.tro.antiyoy.stuff.PointYio;
 
-public class RenderSelectedUnit extends GameRender{
+public class RenderSelectedUnit extends GameRender {
 
     private float ar;
 

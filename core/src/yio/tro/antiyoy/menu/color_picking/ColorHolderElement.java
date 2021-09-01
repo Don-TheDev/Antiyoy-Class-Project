@@ -11,7 +11,7 @@ import yio.tro.antiyoy.menu.render.MenuRender;
 import yio.tro.antiyoy.menu.scenes.Scenes;
 import yio.tro.antiyoy.stuff.*;
 
-public class ColorHolderElement extends AbstractRectangularUiElement implements IColorChoiceListener{
+public class ColorHolderElement extends AbstractRectangularUiElement implements IColorChoiceListener {
 
     public RenderableTextYio title;
     public int valueIndex;
