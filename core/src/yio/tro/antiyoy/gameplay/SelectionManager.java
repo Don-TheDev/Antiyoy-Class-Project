@@ -547,6 +547,14 @@ public class SelectionManager {
                 return GameRules.PRICE_STRONG_TOWER;
             case SelectionTipType.TREE:
                 return GameRules.PRICE_TREE;
+            case SelectionTipType.ACID_RAIN:
+                return GameRules.PRICE_ACID_RAID;
+            case SelectionTipType.EARTHQUAKE:
+                return GameRules.PRICE_EARTHQUAKE;
+            case SelectionTipType.SONG_OF_NATURE:
+                return GameRules.PRICE_SONG_OF_NATURE;
+            case SelectionTipType.LOCUSTS:
+                return GameRules.PRICE_LOCUSTS;
         }
     }
 
@@ -580,6 +588,11 @@ public class SelectionManager {
                     gameController.fieldManager.buildTree(selectedProvince, focusedHex);
                 }
                 break;
+            case SelectionTipType.ACID_RAIN:
+            case SelectionTipType.EARTHQUAKE:
+            case SelectionTipType.LOCUSTS:
+            case SelectionTipType.SONG_OF_NATURE:
+                gameController.fieldManager.executeDisaster(selectedProvince, focusedHex, tipType);
         }
 
         resetTipType();
@@ -591,8 +604,9 @@ public class SelectionManager {
     private boolean canBuildOnHex(Hex focusedHex, int tipType) {
         if (tipType == SelectionTipType.STRONG_TOWER) { // strong tower
             return focusedHex.selected && (!focusedHex.containsBuilding() || focusedHex.objectInside == Obj.TOWER);
+        } else if(tipType > 7){
+            return true;
         }
-
         return focusedHex.selected && !focusedHex.containsBuilding();
     }
 

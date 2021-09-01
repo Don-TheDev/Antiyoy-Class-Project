@@ -950,7 +950,9 @@ public class GameController {
     public void detectAndShowMoveZoneForBuildingUnit(int strength) {
         fieldManager.moveZoneManager.detectAndShowMoveZoneForBuildingUnit(strength);
     }
-
+    public void detectAndShowMoveZoneForDisasters(int type) {
+        fieldManager.moveZoneManager.detectAndShowMoveZoneForDisasters(type);
+    }
 
     public void detectAndShowMoveZoneForFarm() {
         fieldManager.moveZoneManager.detectAndShowMoveZoneForFarm();

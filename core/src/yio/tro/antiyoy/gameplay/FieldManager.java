@@ -799,6 +799,24 @@ public class FieldManager implements EncodeableYio{
         if (hex.isNearWater()) addSolidObject(hex, Obj.PALM);
         else addSolidObject(hex, Obj.PINE);
     }
+    public void spawnDisaster(Hex hex, int type) {
+            Disaster d = null;
+        switch (type){
+            case SelectionTipType.ACID_RAIN:
+                d = DisasterFactory.create(Disasters.ACID_RAIN, hex);
+                break;
+            case SelectionTipType.EARTHQUAKE:
+                d = DisasterFactory.create(Disasters.EARTHQUAKE, hex);
+                break;
+            case SelectionTipType.LOCUSTS:
+                d = DisasterFactory.create(Disasters.LOCUSTS, hex);
+                break;
+            case SelectionTipType.SONG_OF_NATURE:
+                d = DisasterFactory.create(Disasters.SONG_OF_NATURE, hex);
+                break;
+        }
+        d.execute(this);
+    }
 
 
     public void addSolidObject(Hex hex, int type) {
@@ -980,6 +998,38 @@ public class FieldManager implements EncodeableYio{
             addAnimHex(hex);
             province.money -= GameRules.PRICE_TREE;
             gameController.getMatchStatistics().onMoneySpent(gameController.turn, GameRules.PRICE_TREE);
+            gameController.updateCacheOnceAfterSomeTime();
+            return true;
+        }
+
+        // can't build tree
+        tickleMoneySign();
+        return false;
+    }
+    public boolean executeDisaster(Province province, Hex hex, int type) {
+        if (province == null) return false;
+        if (province.hasMoneyForDisaster(type)) {
+            gameController.takeSnapshot();
+            spawnDisaster(hex, type);
+            addAnimHex(hex);
+            switch(type){
+                case SelectionTipType.ACID_RAIN:
+                    province.disasterPoints -= GameRules.PRICE_ACID_RAID;
+                    gameController.getMatchStatistics().onMoneySpent(gameController.turn, GameRules.PRICE_ACID_RAID);
+                    break;
+                case SelectionTipType.EARTHQUAKE:
+                    province.disasterPoints -= GameRules.PRICE_EARTHQUAKE;
+                    gameController.getMatchStatistics().onMoneySpent(gameController.turn, GameRules.PRICE_EARTHQUAKE);
+                    break;
+                case SelectionTipType.SONG_OF_NATURE:
+                    province.disasterPoints -= GameRules.PRICE_SONG_OF_NATURE;
+                    gameController.getMatchStatistics().onMoneySpent(gameController.turn, GameRules.PRICE_SONG_OF_NATURE);
+                    break;
+                case SelectionTipType.LOCUSTS:
+                    province.disasterPoints -= GameRules.PRICE_LOCUSTS;
+                    gameController.getMatchStatistics().onMoneySpent(gameController.turn, GameRules.PRICE_LOCUSTS);
+                    break;
+            }
             gameController.updateCacheOnceAfterSomeTime();
             return true;
         }

@@ -77,5 +77,6 @@ public abstract class Reaction {
     public static final RbShowCheatSceen rbShowCheatSceen = new RbShowCheatSceen();
     public static final RbReplaysMenu rbReplaysMenu = new RbReplaysMenu();
     public static final RbStartInstantReplay rbStartInstantReplay = new RbStartInstantReplay();
+    public static final RbDisasters rbDisasters = new RbDisasters();
 
 }

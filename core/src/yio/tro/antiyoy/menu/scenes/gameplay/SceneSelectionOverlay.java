@@ -1,11 +1,9 @@
 package yio.tro.antiyoy.menu.scenes.gameplay;
 
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import yio.tro.antiyoy.SoundManagerYio;
 import yio.tro.antiyoy.YioGdxGame;
 import yio.tro.antiyoy.factor_yio.FactorYio;
 import yio.tro.antiyoy.gameplay.GameController;
-import yio.tro.antiyoy.gameplay.Province;
 import yio.tro.antiyoy.gameplay.diplomacy.DiplomacyManager;
 import yio.tro.antiyoy.gameplay.rules.GameRules;
 import yio.tro.antiyoy.gameplay.skins.SkinManager;
@@ -13,9 +11,6 @@ import yio.tro.antiyoy.menu.Animation;
 import yio.tro.antiyoy.menu.ButtonYio;
 import yio.tro.antiyoy.menu.MenuControllerYio;
 import yio.tro.antiyoy.menu.behaviors.Reaction;
-import yio.tro.antiyoy.menu.income_view.MoneyViewElement;
-import yio.tro.antiyoy.menu.income_view.MveBehavior;
-import yio.tro.antiyoy.menu.scenes.Scenes;
 import yio.tro.antiyoy.stuff.GraphicsYio;
 
 public class SceneSelectionOverlay extends AbstractModalScene {
@@ -24,6 +19,7 @@ public class SceneSelectionOverlay extends AbstractModalScene {
     private ButtonYio unitButton;
     private ButtonYio towerButton;
     private ButtonYio diplomacyButton;
+    private ButtonYio disasterButton;
     TextureRegion flagNormal;
     private final TextureRegion mailIconTexture;
     private ButtonYio logButton;
@@ -43,6 +39,7 @@ public class SceneSelectionOverlay extends AbstractModalScene {
         createTowerButton();
         createDiplomacyButton();
         createDiplomaticLogButton();
+        createDisasterButton();
     }
 
 
@@ -59,8 +56,6 @@ public class SceneSelectionOverlay extends AbstractModalScene {
             logButton.destroy();
         }
     }
-
-
     private void initLogButton() {
         if (logButton != null) return;
 
@@ -90,8 +85,6 @@ public class SceneSelectionOverlay extends AbstractModalScene {
             diplomacyButton.destroy();
         }
     }
-
-
     private void initDiplomacyButton() {
         if (diplomacyButton != null) return;
 
@@ -107,8 +100,6 @@ public class SceneSelectionOverlay extends AbstractModalScene {
             }
         });
     }
-
-
     private void updateDiplomacyFlagTexture() {
         diplomacyButton.setTexture(flagNormal);
     }
@@ -117,7 +108,7 @@ public class SceneSelectionOverlay extends AbstractModalScene {
     private void createTowerButton() {
         towerButton = menuControllerYio.getButtonById(38);
         if (towerButton == null) { // init
-            towerButton = buttonFactory.getButton(generateSquare(0.30, 0, 0.13 * YioGdxGame.screenRatio), 38, null);
+            towerButton = buttonFactory.getButton(generateSquare(0.250, 0, 0.13 * YioGdxGame.screenRatio), 38, null);
             towerButton.setReaction(Reaction.rbBuildSolidObject);
             towerButton.setAnimation(Animation.down);
             towerButton.enableRectangularMask();
@@ -128,11 +119,10 @@ public class SceneSelectionOverlay extends AbstractModalScene {
         towerButton.appearFactor.appear(3, 2);
     }
 
-
     private void createUnitButton() {
         unitButton = menuControllerYio.getButtonById(39);
         if (unitButton == null) { // init
-            unitButton = buttonFactory.getButton(generateSquare(0.57, 0, 0.13 * YioGdxGame.screenRatio), 39, null);
+            unitButton = buttonFactory.getButton(generateSquare(0.45, 0, 0.13 * YioGdxGame.screenRatio), 39, null);
             unitButton.setReaction(Reaction.rbBuildUnit);
             unitButton.setAnimation(Animation.down);
             unitButton.enableRectangularMask();
@@ -141,6 +131,22 @@ public class SceneSelectionOverlay extends AbstractModalScene {
         unitButton.setTouchable(true);
         unitButton.setTouchOffset(0.05f * GraphicsYio.width);
         unitButton.appearFactor.appear(3, 2);
+    }
+    private void createDisasterButton() {
+        disasterButton = menuControllerYio.getButtonById(999);
+        if (disasterButton == null) { // init
+            disasterButton = buttonFactory.getButton(generateSquare(0.65, 0, 0.13 * YioGdxGame.screenRatio), 999, null);
+            disasterButton.setReaction(Reaction.rbDisasters);
+            disasterButton.setAnimation(Animation.down);
+            disasterButton.enableRectangularMask();
+        }
+        loadDisasterButtonTexture();
+        disasterButton.setTouchable(true);
+        disasterButton.setTouchOffset(0.05f * GraphicsYio.width);
+        disasterButton.appearFactor.appear(3, 2);
+        if (!GameRules.diplomacyEnabled) {
+            diplomacyButton.destroy();
+        }
     }
 
 
@@ -175,6 +181,9 @@ public class SceneSelectionOverlay extends AbstractModalScene {
 
     void loadUnitButtonTexture() {
         menuControllerYio.loadButtonOnce(unitButton, getSkinManager().getPeasantTexturePath());
+    }
+    void loadDisasterButtonTexture() {
+        menuControllerYio.loadButtonOnce(unitButton, getSkinManager().getFarmTexturePath());
     }
 
 

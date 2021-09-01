@@ -68,29 +68,45 @@ public class MoveZoneDetection {
         tempHex = propagationList.get(0);
         propagationList.remove(0);
 
-        tempHex.inMoveZone = true;
-        result.add(tempHex);
+        if (strength == 5) {
+            tempHex.inMoveZone = true;
+            result.add(tempHex);
 
-        if (!tempHex.sameFraction(startHex)) return;
-        if (tempHex.moveZoneNumber == 0) return;
-
-        for (int dir = 0; dir < 6; dir++) {
-            adjHex = tempHex.getAdjacentHex(dir);
-            if (!adjHex.active) continue;
-            if (adjHex.flag) continue;
-
-            if (adjHex.sameFraction(startHex)) {
+            for (int dir = 0; dir < 6; dir++) {
+                adjHex = tempHex.getAdjacentHex(dir);
+                if (!adjHex.active) continue;
+                if (adjHex.flag) continue;
                 propagationList.add(adjHex);
                 adjHex.moveZoneNumber = tempHex.moveZoneNumber - 1;
                 adjHex.flag = true;
-            } else {
-                if (fieldManager.gameController.canUnitAttackHex(strength, startHex.fraction, adjHex)) {
+
+            }
+        } else {
+            tempHex.inMoveZone = true;
+            result.add(tempHex);
+
+            if (!tempHex.sameFraction(startHex)) return;
+            if (tempHex.moveZoneNumber == 0) return;
+
+            for (int dir = 0; dir < 6; dir++) {
+                adjHex = tempHex.getAdjacentHex(dir);
+                if (!adjHex.active) continue;
+                if (adjHex.flag) continue;
+
+                if (adjHex.sameFraction(startHex)) {
                     propagationList.add(adjHex);
+                    adjHex.moveZoneNumber = tempHex.moveZoneNumber - 1;
                     adjHex.flag = true;
+                } else {
+                    if (fieldManager.gameController.canUnitAttackHex(strength, startHex.fraction, adjHex)) {
+                        propagationList.add(adjHex);
+                        adjHex.flag = true;
+                    }
                 }
             }
         }
     }
+
 
 
     private void beginDetection(Hex startHex, int moveLimit) {

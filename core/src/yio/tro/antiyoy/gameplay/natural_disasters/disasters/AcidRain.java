@@ -26,7 +26,7 @@ public class AcidRain extends Disaster
             destroyUnitOrTree(fieldManager, nextHex);
         }
 
-        fieldManager.sayDisaster(this);
+        //fieldManager.sayDisaster(this);
 
     }
 

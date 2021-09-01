@@ -23,7 +23,7 @@ public class Locusts extends Disaster {
             destroyFarm(fieldManager, nextHex);
         }
 
-        fieldManager.sayDisaster(this);
+        //fieldManager.sayDisaster(this);
 
     }
 

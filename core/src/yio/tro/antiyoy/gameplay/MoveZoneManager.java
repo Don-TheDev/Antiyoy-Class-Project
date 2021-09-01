@@ -80,7 +80,6 @@ public class MoveZoneManager {
         detectAndShowMoveZone(startHex, strength, 9001); // move limit is almost infinite
     }
 
-
     public void detectAndShowMoveZone(Hex startHex, int strength, int moveLimit) {
         moveZone = moveZoneDetection.detectMoveZone(startHex, strength, moveLimit);
         checkToForceMoveZoneAnims();
@@ -92,6 +91,9 @@ public class MoveZoneManager {
 
     public void detectAndShowMoveZoneForBuildingUnit(int strength) {
         detectAndShowMoveZone(fieldManager.selectedHexes.get(0), strength);
+    }
+    public void detectAndShowMoveZoneForDisasters(int type) {
+        detectAndShowMoveZone(fieldManager.selectedHexes.get(0), type);
     }
 
 

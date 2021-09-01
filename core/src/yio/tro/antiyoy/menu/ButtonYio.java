@@ -129,8 +129,6 @@ public class ButtonYio implements SliderParentElement, UiChildrenHolder {
 
         selAlphaFactor.move();
     }
-
-
     private void moveSelection() {
         if (!selectionFactor.hasToMove()) return;
 
@@ -139,8 +137,6 @@ public class ButtonYio implements SliderParentElement, UiChildrenHolder {
             lockAction = false;
         }
     }
-
-
     private void moveAppearFactor() {
         if (!appearFactor.hasToMove()) return;
 
@@ -156,8 +152,6 @@ public class ButtonYio implements SliderParentElement, UiChildrenHolder {
         y1 = (float) position.y;
         y2 = y1 + (float) position.height;
     }
-
-
     private void animFixedUp() {
         x1 = (float) position.x;
         x2 = x1 + (float) position.width;
@@ -166,8 +160,6 @@ public class ButtonYio implements SliderParentElement, UiChildrenHolder {
         y1 = (float) (position.y + (1 - f) * 0.6 * GraphicsYio.height);
         y2 = y1 + (float) position.height;
     }
-
-
     private void animFixedDown() {
         x1 = (float) position.x;
         x2 = x1 + (float) position.width;
@@ -176,8 +168,6 @@ public class ButtonYio implements SliderParentElement, UiChildrenHolder {
         y1 = (float) (position.y - (1 - f) * 0.6 * GraphicsYio.height);
         y2 = y1 + (float) position.height;
     }
-
-
     private void animFromCenter() {
         hor = (float) (0.5 * f * position.width);
         ver = (float) (0.5 * f * position.height);
@@ -190,8 +180,6 @@ public class ButtonYio implements SliderParentElement, UiChildrenHolder {
         y1 = cy - ver;
         y2 = cy + ver;
     }
-
-
     private void animSolid() {
         x1 = (float) position.x;
         x2 = x1 + (float) position.width;
@@ -200,8 +188,6 @@ public class ButtonYio implements SliderParentElement, UiChildrenHolder {
         y1 = (float) position.y;
         y2 = y1 + (float) position.height;
     }
-
-
     private void animDown() {
         x1 = (float) position.x;
         x2 = x1 + (float) position.width;
@@ -210,8 +196,6 @@ public class ButtonYio implements SliderParentElement, UiChildrenHolder {
         y1 = (float) (f * (position.y + position.height)) - (float) position.height;
         y2 = y1 + (float) position.height;
     }
-
-
     private void animUp() {
         x1 = (float) position.x;
         x2 = x1 + (float) position.width;
@@ -220,8 +204,6 @@ public class ButtonYio implements SliderParentElement, UiChildrenHolder {
         y1 = (float) position.y + (float) ((1 - f) * (menuControllerYio.yioGdxGame.h - position.y));
         y2 = y1 + (float) position.height;
     }
-
-
     private void animDefault() {
         hor = (float) (0.5 * f * position.width);
         ver = (float) (0.5 * f * position.height);
@@ -247,24 +229,18 @@ public class ButtonYio implements SliderParentElement, UiChildrenHolder {
     public void setTouchable(boolean touchable) {
         this.touchable = touchable;
     }
-
-
     public void setAnimation(Animation animType) {
         this.animType = animType;
     }
-
 
     public void appear() {
         appearFactor.appear(MenuControllerYio.SPAWN_ANIM, MenuControllerYio.SPAWN_SPEED);
         appearFactor.setValues(0, 0.001);
         onAppear();
     }
-
-
     private void onAppear() {
         selectionFactor.reset();
     }
-
 
     public double getVpX() {
         if (animType == Animation.left) {
@@ -272,7 +248,6 @@ public class ButtonYio implements SliderParentElement, UiChildrenHolder {
         }
         return position.x;
     }
-
 
     public boolean checkTouch(int screenX, int screenY, int pointer, int button) {
         if (!touchable) return false;

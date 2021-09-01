@@ -26,7 +26,7 @@ public class Province {
         this.hexList = new ArrayList<>(hexList);
         tempList = new ArrayList<>();
         money = DEFAULT_MONEY;
-        disasterPoints = 0;
+        disasterPoints = 10;
         tempPoint = new PointYio();
     }
 
@@ -257,6 +257,19 @@ public class Province {
     }
     public boolean hasMoneyForTree() {
         return money >= GameRules.PRICE_TREE;
+    }
+    public boolean hasMoneyForDisaster(int type) {
+        switch (type) {
+            case SelectionTipType.ACID_RAIN:
+                return disasterPoints >= GameRules.PRICE_ACID_RAID;
+            case SelectionTipType.EARTHQUAKE:
+                return disasterPoints >= GameRules.PRICE_EARTHQUAKE;
+            case SelectionTipType.SONG_OF_NATURE:
+                return disasterPoints >= GameRules.PRICE_SONG_OF_NATURE;
+            case SelectionTipType.LOCUSTS:
+                return disasterPoints >= GameRules.PRICE_LOCUSTS;
+        }
+        return false;
     }
 
     public int getExtraFarmCost() {

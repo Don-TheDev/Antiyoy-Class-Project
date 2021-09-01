@@ -15,6 +15,11 @@ public class GameRules {
     public static final int FARM_INCOME = 4;
     public static final int TREE_CUT_REWARD = 3;
 
+    public static final int PRICE_ACID_RAID = 10;
+    public static final int PRICE_EARTHQUAKE = 10;
+    public static final int PRICE_SONG_OF_NATURE = 10;
+    public static final int PRICE_LOCUSTS = 10;
+
     public static final int TAX_TOWER = 1;
     public static final int TAX_STRONG_TOWER = 6;
     public static final int TAX_UNIT_GENERIC_1 = 2;
