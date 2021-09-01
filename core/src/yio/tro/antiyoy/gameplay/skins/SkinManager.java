@@ -3,7 +3,6 @@ package yio.tro.antiyoy.gameplay.skins;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import yio.tro.antiyoy.SettingsManager;
 import yio.tro.antiyoy.YioGdxGame;
-import yio.tro.antiyoy.gameplay.game_view.GameRender;
 import yio.tro.antiyoy.menu.render.MenuRender;
 import yio.tro.antiyoy.menu.scenes.Scenes;
 import yio.tro.antiyoy.stuff.AtlasLoader;
@@ -81,6 +80,22 @@ public class SkinManager {
         }
     }
 
+    public String getDCoinTexturePath() {
+        return "DisasterCoin.png";
+    }
+
+    public String getAcidRainTexturePath() {
+        return "natural_disasters/AcidRain.png";
+    }
+    public String getEarthquakeTexturePath() {
+        return "natural_disasters/Earthquake.png";
+    }
+    public String getLocustSwarmTexturePath() {
+        return "natural_disasters/LocustSwarm.png";
+    }
+    public String getSongOfNatureTexturePath() {
+        return "natural_disasters/SongOfNature.png";
+    }
 
     public String getFieldElementsFolderPath() {
         switch (skinType) {

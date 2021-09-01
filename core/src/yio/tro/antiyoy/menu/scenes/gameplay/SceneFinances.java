@@ -95,6 +95,11 @@ public class SceneFinances extends AbstractModalScene{
     void loadCoinButtonTexture() {
         menuControllerYio.loadButtonOnce(coinButton, getSkinManager().getCoinTexturePath());
     }
+
+    void loadDCoinButtonTexture() {
+        menuControllerYio.loadButtonOnce(coinButton, menuControllerYio.yioGdxGame.skinManager.getDCoinTexturePath());
+    }
+
     void loadDisasterPointButtonTexture() {
      //   menuControllerYio.loadButtonOnce(disasterPointButton, getSkinManager().getDisasterPointTexturePath());
     }

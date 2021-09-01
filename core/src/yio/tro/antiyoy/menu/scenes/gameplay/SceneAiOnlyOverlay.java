@@ -82,4 +82,8 @@ public class SceneAiOnlyOverlay extends AbstractScene {
     void loadCoinButtonTexture() {
         menuControllerYio.loadButtonOnce(coinButton, menuControllerYio.yioGdxGame.skinManager.getCoinTexturePath());
     }
+
+    void loadDCoinButtonTexture() {
+        menuControllerYio.loadButtonOnce(coinButton, menuControllerYio.yioGdxGame.skinManager.getDCoinTexturePath());
+    }
 }

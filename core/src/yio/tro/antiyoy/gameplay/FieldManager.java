@@ -63,8 +63,7 @@ public class FieldManager implements EncodeableYio{
     public AutomaticTransitionWorker automaticTransitionWorker;
 
         public void sayDisaster(Disaster disaster) {
-            JFrame f = new JFrame();
-            JOptionPane.showMessageDialog(f, disaster.toString(), "Alert", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(new JFrame(), disaster.toString(), "Alert", JOptionPane.INFORMATION_MESSAGE);
         }
 
         public FieldManager(GameController gameController) {
