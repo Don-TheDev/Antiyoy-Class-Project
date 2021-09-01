@@ -84,11 +84,11 @@ public class SkinManager {
         return "DisasterCoin.png";
     }
 
-    public String getAcidRainTexturePath() {
-        return "natural_disasters/AcidRain.png";
-    }
     public String getEarthquakeTexturePath() {
         return "natural_disasters/Earthquake.png";
+    }
+    public String getAcidRainTexturePath() {
+        return "natural_disasters/AcidRain.png";
     }
     public String getLocustSwarmTexturePath() {
         return "natural_disasters/LocustSwarm.png";

@@ -798,6 +798,7 @@ public class FieldManager implements EncodeableYio{
         if (hex.isNearWater()) addSolidObject(hex, Obj.PALM);
         else addSolidObject(hex, Obj.PINE);
     }
+
     public void spawnDisaster(Hex hex, int type) {
             Disaster d = null;
         switch (type){
