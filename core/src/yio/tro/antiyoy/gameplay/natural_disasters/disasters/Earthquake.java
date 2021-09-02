@@ -25,7 +25,7 @@ public class Earthquake extends Disaster
             destroyTower(fieldManager, nextHex);
         }
 
-  //      fieldManager.sayDisaster(this);
+        fieldManager.sayDisaster(this);
 
     }
 

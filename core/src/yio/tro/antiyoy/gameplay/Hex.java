@@ -125,6 +125,9 @@ public class Hex implements ReusableYio, EncodeableYio {
     public boolean containsTree() {
         return objectInside == Obj.PALM || objectInside == Obj.PINE;
     }
+    public boolean containsDisasterPoint() {
+        return objectInside == Obj.DISASTER_POINT;
+    }
 
 
     public boolean containsObject() {

@@ -26,13 +26,19 @@ public class RulesetGeneric extends Ruleset {
 
     @Override
     public void onUnitAdd(Hex hex) {
-        if (!hex.containsTree()) {
+        if (!hex.containsTree() && !hex.containsDisasterPoint()) {
             return;
         }
 
         Province provinceByHex = gameController.fieldManager.getProvinceByHex(hex);
-        if (provinceByHex != null) {
-            provinceByHex.money += GameRules.TREE_CUT_REWARD;
+        if(hex.containsTree()){
+            if (provinceByHex != null) {
+                provinceByHex.money += GameRules.TREE_CUT_REWARD;
+            }
+        } else if(hex.containsDisasterPoint()){
+            if (provinceByHex != null) {
+                provinceByHex.disasterPoints += GameRules.DISASTER_POINT_REWARD;
+            }
         }
     }
 
@@ -103,11 +109,17 @@ public class RulesetGeneric extends Ruleset {
 
     @Override
     public void onUnitMoveToHex(Unit unit, Hex hex) {
-        if (!hex.containsTree()) return;
+        if (!hex.containsTree()||!hex.containsDisasterPoint()) return;
 
         Province provinceByHex = gameController.getProvinceByHex(hex);
-        if (provinceByHex != null) {
-            provinceByHex.money += GameRules.TREE_CUT_REWARD;
+        if(hex.containsTree()){
+            if (provinceByHex != null) {
+                provinceByHex.money += GameRules.TREE_CUT_REWARD;
+            }
+        } else if(hex.containsDisasterPoint()){
+            if (provinceByHex != null) {
+                provinceByHex.disasterPoints += GameRules.DISASTER_POINT_REWARD;
+            }
         }
     }
 

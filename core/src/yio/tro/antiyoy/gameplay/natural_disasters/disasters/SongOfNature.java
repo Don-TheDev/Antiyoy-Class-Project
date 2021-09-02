@@ -30,7 +30,7 @@ public class SongOfNature extends Disaster
             spawnTree(fieldManager, nextHex);
         }
 
-       // fieldManager.sayDisaster(this);
+       fieldManager.sayDisaster(this);
 
     }
 

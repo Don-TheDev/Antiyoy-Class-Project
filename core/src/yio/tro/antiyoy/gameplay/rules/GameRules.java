@@ -19,6 +19,7 @@ public class GameRules {
     public static final int PRICE_EARTHQUAKE = 10;
     public static final int PRICE_SONG_OF_NATURE = 10;
     public static final int PRICE_LOCUSTS = 10;
+    public static final int DISASTER_POINT_REWARD = 10;
 
     public static final int TAX_TOWER = 1;
     public static final int TAX_STRONG_TOWER = 6;
