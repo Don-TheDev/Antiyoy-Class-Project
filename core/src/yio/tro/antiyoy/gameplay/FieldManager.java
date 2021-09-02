@@ -795,6 +795,10 @@ public class FieldManager implements EncodeableYio {
         if (hex.isNearWater()) addSolidObject(hex, Obj.PALM);
         else addSolidObject(hex, Obj.PINE);
     }
+    public void spawnDisasterPoint(Hex hex) {
+        if (!hex.active) return;
+        else addSolidObject(hex, Obj.DISASTER_POINT);
+    }
 
     public void spawnDisaster(Hex hex, int type) {
         Disaster d = null;
@@ -1374,7 +1378,7 @@ public class FieldManager implements EncodeableYio {
     //Creates chance for Natural Disasters to spawn, assuming they are enabled
     public void disasterTurnEnded() {
         if (GameRules.naturalDisastersEnabled) {
-            if (/*gameController.random.nextInt(2) == 1*/true) {
+            if (gameController.random.nextInt(7) == 1) {
                 switch (gameController.random.nextInt(4)) {
                     case 0:
                         DisasterFactory.create(Disasters.LOCUSTS).execute(this);
@@ -1389,6 +1393,13 @@ public class FieldManager implements EncodeableYio {
                         DisasterFactory.create(Disasters.SONG_OF_NATURE).execute(this);
                         break;
                 }
+            }
+            if(gameController.random.nextInt(3) == 1){
+                Hex hex = getRandomActivehex();
+                while (!hex.isEmpty()){
+                    hex = getRandomActivehex();
+                }
+                spawnDisasterPoint(hex);
             }
         }
     }
