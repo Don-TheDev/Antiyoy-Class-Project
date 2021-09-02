@@ -7,20 +7,20 @@ import yio.tro.antiyoy.gameplay.Obj;
 
 import java.util.ArrayList;
 
-public class RaDisasterSpawned extends RepAction {
+public class RaDisasterCoinSpawned extends RepAction {
     //TODO just copied tree classes
 
     Hex hex;
 
 
-    public RaDisasterSpawned(Hex hex) {
+    public RaDisasterCoinSpawned(Hex hex) {
         this.hex = hex;
     }
 
 
     @Override
     public void initType() {
-        type = DISASTER_SPAWNED;
+        type = PINE_SPAWNED;
     }
 
 
@@ -39,13 +39,13 @@ public class RaDisasterSpawned extends RepAction {
 
     @Override
     public void perform(GameController gameController) {
-        gameController.fieldManager.addSolidObject(hex, Obj.PINE);
+        gameController.fieldManager.addSolidObject(hex, Obj.DISASTER_POINT);
     }
 
 
     @Override
     public String toString() {
-        return "[Pine spawned: " +
+        return "[Disaster coin spawned: " +
                 hex +
                 "]";
     }

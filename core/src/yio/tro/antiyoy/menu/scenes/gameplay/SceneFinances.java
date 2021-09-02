@@ -69,9 +69,9 @@ public class SceneFinances extends AbstractModalScene{
     }
 
     private void createDisasterPointButton() {
-        disasterPointButton = menuControllerYio.getButtonById(998); //todo
+        disasterPointButton = menuControllerYio.getButtonById(744); //todo
         if (disasterPointButton == null) { // init
-            disasterPointButton = buttonFactory.getButton(generateSquare(0, 0.9, 0.07), 998, null);
+            disasterPointButton = buttonFactory.getButton(generateSquare(0, 0.9, 0.07), 744, null);
             disasterPointButton.setAnimation(Animation.up);
             disasterPointButton.setPressSound(SoundManagerYio.soundCoin);
             disasterPointButton.enableRectangularMask();

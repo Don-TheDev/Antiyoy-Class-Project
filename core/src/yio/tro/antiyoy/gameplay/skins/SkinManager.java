@@ -81,7 +81,7 @@ public class SkinManager {
     }
 
     public String getDCoinTexturePath() {
-        return "DisasterCoin.png";
+        return "disaster_coin.png";
     }
 
     public String getEarthquakeTexturePath() {
@@ -167,6 +167,10 @@ public class SkinManager {
 
     public String getTowerTexturePath() {
         return getFieldElementsFolderPath() + "/tower.png";
+    }
+
+    public String getDisasterCoinTexturePath() {
+        return getFieldElementsFolderPath() + "/disaster_coin.png";
     }
 
 

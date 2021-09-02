@@ -50,6 +50,12 @@ public class ReplayManager {
     }
 
 
+    public void onDisasterCoinSpawned(Hex hex) {
+        if (!canAddAction()) return;
+        replay.addAction(new RaDisasterCoinSpawned(hex));
+    }
+
+
     public void onLoadingFromSlotFinished(FieldManager fieldManager) {
         if (replay != null) {
             replay.updateActionsFromString(fieldManager);
@@ -82,7 +88,7 @@ public class ReplayManager {
     public void onDisasterSpawned(Hex hex) {
         //TODO finish implementing disaster spawned listener
         if (!canAddAction()) return;
-        replay.addAction(new RaDisasterSpawned(hex));
+        replay.addAction(new RaDisasterCoinSpawned(hex));
     }
 
 

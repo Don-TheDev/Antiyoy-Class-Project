@@ -3,7 +3,6 @@ package yio.tro.antiyoy.stuff;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import yio.tro.antiyoy.gameplay.game_view.GameView;
 
 import java.util.ArrayList;
 import java.util.StringTokenizer;

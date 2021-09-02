@@ -599,6 +599,12 @@ public class GameController {
                 GlobalStatistics.getInstance().updateByMatchStatistics(matchStatistics);
             }
             fieldManager.expandTrees();
+            Hex randomHex;
+            do
+            {
+                randomHex = fieldManager.getRandomActivehex();
+            } while (randomHex.containsObject());
+            fieldManager.spawnDisasterCoin(randomHex);
         }
 
         prepareCertainUnitsToMove();

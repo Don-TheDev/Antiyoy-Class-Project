@@ -73,6 +73,8 @@ public class RenderSolidObjects extends GameRender {
                 return gameView.texturesManager.farmTexture[hex.visualDiversityIndex].getTexture(quality);
             case Obj.STRONG_TOWER:
                 return gameView.texturesManager.strongTowerTexture.getTexture(quality);
+            case Obj.DISASTER_POINT:
+                return gameView.texturesManager.disasterPointTexture.getTexture(quality);
             default:
                 return gameView.texturesManager.selectionPixel;
         }

@@ -491,6 +491,36 @@ public class FieldManager implements EncodeableYio {
     }
 
 
+    public void spawnDisasterCoin(Hex hex) {
+        if (GameRules.replayMode) return;
+//
+//        ArrayList<Hex> newPalmsList = getNewPalmsList();
+//        ArrayList<Hex> newPinesList = getNewPinesList();
+//
+//
+//        for (int i = newPalmsList.size() - 1; i >= 0; i--) {
+//            spawnPalm(newPalmsList.get(i));
+//        }
+//
+//        for (int i = newPinesList.size() - 1; i >= 0; i--) {
+//            spawnPine(newPinesList.get(i));
+//        }
+//
+//        for (Hex activeHex : activeHexes) {
+//            if (activeHex.containsTree() && activeHex.blockToTreeFromExpanding) {
+//                activeHex.blockToTreeFromExpanding = false;
+//            }
+//        }
+        if (!hex.canContainObjects) return;
+
+        addSolidObject(hex, Obj.DISASTER_POINT);
+        addAnimHex(hex);
+        hex.animFactor.setValues(1, 0);
+//        gameController.replayManager.onPineSpawned(hex);
+        gameController.replayManager.onDisasterCoinSpawned(hex);
+    }
+
+
     private ArrayList<Hex> getNewPinesList() {
         ArrayList<Hex> newPinesList = new ArrayList<Hex>();
 
@@ -816,7 +846,7 @@ public class FieldManager implements EncodeableYio {
     }
 
 
-    public void addSolidObject(Hex hex, int type) {
+    public void addSolidObject(Hex hex, int type)   {
         if (hex == null || !hex.active) return;
         if (hex.objectInside == type) return;
         if (!hex.canContainObjects) return;
@@ -1390,6 +1420,7 @@ public class FieldManager implements EncodeableYio {
                         break;
                 }
             }
+
         }
     }
 

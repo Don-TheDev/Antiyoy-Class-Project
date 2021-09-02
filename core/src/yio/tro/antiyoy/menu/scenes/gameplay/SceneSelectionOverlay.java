@@ -183,7 +183,7 @@ public class SceneSelectionOverlay extends AbstractModalScene {
         menuControllerYio.loadButtonOnce(unitButton, getSkinManager().getPeasantTexturePath());
     }
     void loadDisasterButtonTexture() {
-        menuControllerYio.loadButtonOnce(unitButton, getSkinManager().getFarmTexturePath());
+        menuControllerYio.loadButtonOnce(unitButton, getSkinManager().getDisasterCoinTexturePath());
     }
 
 

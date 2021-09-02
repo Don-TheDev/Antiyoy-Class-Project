@@ -20,7 +20,7 @@ public class GameTexturesManager {
     public TextureRegion blackPixel, grayPixel, selectionPixel, shadowHexTexture, gradientShadow, transCircle1, transCircle2, selUnitShadow;
     TextureRegion sideShadow, responseAnimHexTexture, selectionBorder, defenseIcon;
     public Storage3xTexture manTextures[], palmTexture, houseTexture, towerTexture, graveTexture, pineTexture;
-    public Storage3xTexture castleTexture, strongTowerTexture, farmTexture[];
+    public Storage3xTexture castleTexture, strongTowerTexture, farmTexture[], disasterPointTexture;
     TextureRegion hexColor4, hexColor5, hexColor6;
     public AtlasLoader atlasLoader;
 
@@ -84,6 +84,7 @@ public class GameTexturesManager {
         farmTexture[1] = new Storage3xTexture(atlasLoader, "farm2.png");
         farmTexture[2] = new Storage3xTexture(atlasLoader, "farm3.png");
         strongTowerTexture = new Storage3xTexture(atlasLoader, "strong_tower.png");
+        disasterPointTexture = new Storage3xTexture(atlasLoader, "disaster_coin.png");
     }
 
 
